@@ -1,0 +1,1384 @@
+{
+  "summary": {
+    "queries": 30,
+    "evaluated": 25,
+    "mean_faithfulness": 0.7564,
+    "fully_faithful": 9,
+    "partially_faithful": 16,
+    "unfaithful": 0,
+    "no_answer_or_empty": 5,
+    "model": "llama-3.1-8b-instant",
+    "search_mode": "hybrid"
+  },
+  "results": [
+    {
+      "query_id": "q001",
+      "query": "What is RBAC and how is it implemented in an enterprise environment?",
+      "answer": "RBAC (Role-Based Access Control) is a framework that restricts system access based on each user's role, enforcing the principle of least privilege across all on-premises, cloud, and hybrid environments [source: iam_rbac_policy.pdf, p3].\n\nThe implementation of RBAC in an enterprise environment involves:\n\n* Restricting system access based on user roles\n* Enforcing the principle of least privilege\n* Aligning with regulatory requirements such as SOX Section 404, HIPAA \u00a7164.312(a)(1), PCI DSS Requirement 7, and NIST SP 800-53 AC-2, AC-3, and AC-6 control families [source: iam_rbac_policy.pdf, p3]\n* Following a defense-in-depth model incorporating multiple complementary layers of preventive, detective, and corrective controls [source: iam_rbac_policy.pdf, p5]\n* Structuring the RBAC model as a four-tier hierarchy: Base Roles, Functional Roles, Composite Roles, and Administrative Roles [source: iam_rbac_policy.pdf, p9]\n\nThe RBAC framework is governed by a comprehensive set of enterprise-wide policies that define roles, responsibilities, and accountability structures across all business units and technology domains. These policies are reviewed annually by the Information Security Steering Committee and updated to reflect changes in the regulatory environment, threat landscape, and organizational risk appetite [source: iam_rbac_policy.pdf, p3].",
+      "contexts": [
+        "This policy establishes the enterprise framework for Role-Based Access Control (RBAC) across all\ninformation systems, applications, and infrastructure components. RBAC restricts system access based on\neach user's role, enforcing the principle of least privilege across all on-premises, cloud, and hybrid\nenvironments.\nThe scope encompasses all employees, contractors, third-party vendors, and automated service accounts.\nIt applies to all systems processing, storing, or transmitting sensitive or regulated data.",
+        "to all systems processing, storing, or transmitting sensitive or regulated data. RBAC implementation must align with SOX Section 404, HIPAA \u00a7164.312(a)(1), PCI DSS Requirement 7,\nand NIST SP 800-53 AC-2, AC-3, and AC-6 control families.\nThe RBAC framework is governed by a comprehensive set of enterprise-wide policies that define roles,\nresponsibilities, and accountability structures across all business units and technology domains. These\npolicies are reviewed annually by the Information Security Steering Committee and updated to reflect\nchanges in the regulatory environment, threat landscape, and organizational risk appetite. Policy exceptions",
+        "The RBAC architecture follows a defense-in-depth model incorporating multiple complementary layers of\npreventive, detective, and corrective controls deployed across people, process, and technology dimensions.\nNo single control is considered sufficient in isolation; rather, the layered approach ensures that the failure of\nany one control does not result in a complete security failure. Control interdependencies are documented in\nthe enterprise control matrix, and compensating controls are identified for each primary control to maintain",
+        "The enterprise RBAC model is structured as a four-tier hierarchy: Base Roles, Functional Roles, Composite\nRoles, and Administrative Roles. Each tier inherits permissions from the tier below, with additional\nrestrictions applied at higher tiers.\nFunctional Roles are aligned to specific job families such as Finance Analyst, Security Operations Analyst,\nor HR Business Partner. Composite Roles combine multiple functional roles for users with cross-functional\nresponsibilities.\nThe role hierarchy framework is governed by a comprehensive set of enterprise-wide policies that define"
+      ],
+      "total_statements": 24,
+      "supported_statements": 21,
+      "faithfulness": 0.875,
+      "statements": [
+        {
+          "statement": "RBAC is a framework that restricts system access based on each user's role.",
+          "supported": true
+        },
+        {
+          "statement": "The principle of least privilege is enforced across all on-premises, cloud, and hybrid environments.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC involves restricting system access based on user roles.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC involves enforcing the principle of least privilege.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC aligns with regulatory requirements such as SOX Section 404.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC aligns with regulatory requirements such as HIPAA \u00a7164.312(a)(1).",
+          "supported": true
+        },
+        {
+          "statement": "RBAC aligns with regulatory requirements such as PCI DSS Requirement 7.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC aligns with regulatory requirements such as NIST SP 800-53 AC-2.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC aligns with regulatory requirements such as NIST SP 800-53 AC-3.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC aligns with regulatory requirements such as NIST SP 800-53 AC-6.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC follows a defense-in-depth model.",
+          "supported": true
+        },
+        {
+          "statement": "RBAC incorporates multiple complementary layers of preventive, detective, and corrective controls.",
+          "supported": true
+        },
+        {
+          "statement": "The RBAC model is structured as a four-tier hierarchy.",
+          "supported": true
+        },
+        {
+          "statement": "The four-tier hierarchy consists of Base Roles.",
+          "supported": true
+        },
+        {
+          "statement": "The four-tier hierarchy consists of Functional Roles.",
+          "supported": false
+        },
+        {
+          "statement": "The four-tier hierarchy consists of Composite Roles.",
+          "supported": false
+        },
+        {
+          "statement": "The four-tier hierarchy consists of Administrative Roles.",
+          "supported": false
+        },
+        {
+          "statement": "RBAC is governed by a comprehensive set of enterprise-wide policies.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise-wide policies define roles.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise-wide policies define responsibilities.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise-wide policies define accountability structures.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise-wide policies are reviewed annually.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise-wide policies are updated to reflect changes in the regulatory environment.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise-wide",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q002",
+      "query": "What is the difference between RBAC and ABAC in identity and access management?",
+      "answer": "",
+      "contexts": [],
+      "total_statements": 0,
+      "supported_statements": 0,
+      "faithfulness": null,
+      "statements": []
+    },
+    {
+      "query_id": "q003",
+      "query": "What KPIs are used to measure the effectiveness of an RBAC implementation?",
+      "answer": "",
+      "contexts": [],
+      "total_statements": 0,
+      "supported_statements": 0,
+      "faithfulness": null,
+      "statements": []
+    },
+    {
+      "query_id": "q004",
+      "query": "How does a transaction monitoring system detect fraudulent payment activity?",
+      "answer": "I don't have enough information in the provided documents to answer this question.",
+      "contexts": [
+        "The Transaction Monitoring Framework program establishes a comprehensive approach to detecting,\ninvestigating, and preventing fraudulent activities across all business operations and transactional systems.\nThis framework applies to all employees, contractors, and third parties who interact with financial,\noperational, or data systems.\nThe Association of Certified Fraud Examiners (ACFE) estimates that organizations lose approximately 5% of\nannual revenue to fraud, with insider threats accounting for a disproportionate share of losses due to the",
+        "The Behavioral Analytics for Fraud Detection program establishes a comprehensive approach to detecting,\ninvestigating, and preventing fraudulent activities across all business operations and transactional systems.\nThis framework applies to all employees, contractors, and third parties who interact with financial,\noperational, or data systems.\nThe Association of Certified Fraud Examiners (ACFE) estimates that organizations lose approximately 5% of\nannual revenue to fraud, with insider threats accounting for a disproportionate share of losses due to the",
+        "The Anomaly Detection Methodology for Fraud program establishes a comprehensive approach to\ndetecting, investigating, and preventing fraudulent activities across all business operations and transactional\nsystems. This framework applies to all employees, contractors, and third parties who interact with financial,\noperational, or data systems.\nThe Association of Certified Fraud Examiners (ACFE) estimates that organizations lose approximately 5% of\nannual revenue to fraud, with insider threats accounting for a disproportionate share of losses due to the",
+        "The Fraud Case Management and Investigation Framework program establishes a comprehensive\napproach to detecting, investigating, and preventing fraudulent activities across all business operations and\ntransactional systems. This framework applies to all employees, contractors, and third parties who interact\nwith financial, operational, or data systems.\nThe Association of Certified Fraud Examiners (ACFE) estimates that organizations lose approximately 5% of\nannual revenue to fraud, with insider threats accounting for a disproportionate share of losses due to the"
+      ],
+      "total_statements": 0,
+      "supported_statements": 0,
+      "faithfulness": null,
+      "statements": []
+    },
+    {
+      "query_id": "q005",
+      "query": "What are the key metrics used to evaluate a fraud detection model in transaction monitoring?",
+      "answer": "The key metrics used to evaluate a fraud detection model in transaction monitoring include:\n\n* Coverage percentages [source: fraud_anomaly_detection.pdf, p10]\n* Mean time to detect [source: fraud_anomaly_detection.pdf, p10; fraud_transaction_monitoring.pdf, p4]\n* Mean time to respond [source: fraud_anomaly_detection.pdf, p10; fraud_transaction_monitoring.pdf, p4]\n* SLA adherence rates [source: fraud_anomaly_detection.pdf, p10; fraud_transaction_monitoring.pdf, p4]\n* Risk reduction [source: fraud_transaction_monitoring.pdf, p4]\n* Cost per incident [source: fraud_transaction_monitoring.pdf, p4]\n* Regulatory compliance posture [source: fraud_anomaly_detection.pdf, p7; fraud_transaction_monitoring.pdf, p4]",
+      "contexts": [
+        "90 days, after which they must be re-evaluated and either remediated or renewed with updated justification. All active exceptions are reviewed monthly by the Vulnerability Management and\nRisk teams to assess residual risk and accelerate remediation where possible.\nMetrics and key performance indicators (KPIs) for fraud detection layers are reported monthly to the\nInformation Security Steering Committee and quarterly to the Board Audit and Risk Committee, with\nyear-over-year trend analysis to demonstrate program maturity. Operational metrics include coverage\npercentages, mean time to detect, mean time to respond, and SLA adherence rates, while strategic metrics",
+        "Operational metrics include coverage percentages, mean time to detect, mean time to respond, and SLA adherence rates, while strategic metrics\ntrack risk reduction, cost per incident, and regulatory compliance posture. Dashboard visualizations are\nmaintained in the enterprise GRC platform and accessible to senior stakeholders in real time.\nContinuous improvement initiatives for the Transaction fraud program program are driven by a structured\nlessons-learned process following security incidents, outcomes from red team and purple team exercises,",
+        "The Transaction Monitoring Framework program establishes a comprehensive approach to detecting,\ninvestigating, and preventing fraudulent activities across all business operations and transactional systems.\nThis framework applies to all employees, contractors, and third parties who interact with financial,\noperational, or data systems.\nThe Association of Certified Fraud Examiners (ACFE) estimates that organizations lose approximately 5% of\nannual revenue to fraud, with insider threats accounting for a disproportionate share of losses due to the",
+        "nd Risk teams to\nassess residual risk and accelerate remediation where possible. Metrics and key performance indicators (KPIs) for fraud regulation are reported monthly to the Information\nSecurity Steering Committee and quarterly to the Board Audit and Risk Committee, with year-over-year\ntrend analysis to demonstrate program maturity. Operational metrics include coverage percentages, mean\ntime to detect, mean time to respond, and SLA adherence rates, while strategic metrics track risk reduction,\ncost per incident, and regulatory compliance posture. Dashboard visualizations are maintained in the\nenterprise GRC platform and accessible to senior stakeholders in real time."
+      ],
+      "total_statements": 14,
+      "supported_statements": 7,
+      "faithfulness": 0.5,
+      "statements": [
+        {
+          "statement": "Coverage percentages are used to evaluate a fraud detection model in transaction monitoring.",
+          "supported": true
+        },
+        {
+          "statement": "The source of coverage percentages is fraud_anomaly_detection.pdf, p10.",
+          "supported": false
+        },
+        {
+          "statement": "Mean time to detect is used to evaluate a fraud detection model in transaction monitoring.",
+          "supported": true
+        },
+        {
+          "statement": "The source of mean time to detect is fraud_anomaly_detection.pdf, p10; fraud_transaction_monitoring.pdf, p4.",
+          "supported": false
+        },
+        {
+          "statement": "Mean time to respond is used to evaluate a fraud detection model in transaction monitoring.",
+          "supported": true
+        },
+        {
+          "statement": "The source of mean time to respond is fraud_anomaly_detection.pdf, p10; fraud_transaction_monitoring.pdf, p4.",
+          "supported": false
+        },
+        {
+          "statement": "SLA adherence rates are used to evaluate a fraud detection model in transaction monitoring.",
+          "supported": true
+        },
+        {
+          "statement": "The source of SLA adherence rates is fraud_anomaly_detection.pdf, p10; fraud_transaction_monitoring.pdf, p4.",
+          "supported": false
+        },
+        {
+          "statement": "Risk reduction is used to evaluate a fraud detection model in transaction monitoring.",
+          "supported": true
+        },
+        {
+          "statement": "The source of risk reduction is fraud_transaction_monitoring.pdf, p4.",
+          "supported": false
+        },
+        {
+          "statement": "Cost per incident is used to evaluate a fraud detection model in transaction monitoring.",
+          "supported": true
+        },
+        {
+          "statement": "The source of cost per incident is fraud_transaction_monitoring.pdf, p4.",
+          "supported": false
+        },
+        {
+          "statement": "Regulatory compliance posture is used to evaluate a fraud detection model in transaction monitoring.",
+          "supported": true
+        },
+        {
+          "statement": "The source of regulatory compliance posture is fraud_anomaly_detection.pdf, p7; fraud_transaction_monitoring.pdf, p4.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q006",
+      "query": "What is the CVSS scoring system and how is a vulnerability score calculated?",
+      "answer": "The CVSS scoring system is a standardized method for rating vulnerability severity, with scores ranging from 0.0 to 10.0 [source: vuln_asset_prioritization.pdf, p15]. The scores are categorized as follows:\n\n* None (0.0)\n* Low (0.1-3.9)\n* Medium (4.0-6.9)\n* High (7.0-8.9)\n* Critical (9.0-10.0)\n\nA vulnerability score is calculated based on three components:\n\n1. **Base score**: Reflects intrinsic characteristics of the vulnerability [source: vuln_asset_prioritization.pdf, p15].\n2. **Temporal score**: Allows contextual adjustment for asset criticality, exploitability intelligence, and compensating controls [source: vuln_asset_prioritization.pdf, p15].\n3. **Environmental score**: Also allows contextual adjustment for asset criticality, exploitability intelligence, and compensating controls [source: vuln_asset_prioritization.pdf, p15].\n\nThe CVSS scoring framework is governed by a comprehensive set of enterprise-wide policies that define the scoring process [source: vuln_asset_prioritization.pdf, p15].",
+      "contexts": [
+        "The Common Vulnerability Scoring System (CVSS) v3.1 provides a standardized method for rating\nvulnerability severity. CVSS scores range from 0.0 to 10.0: None (0.0), Low (0.1-3.9), Medium (4.0-6.9),\nHigh (7.0-8.9), and Critical (9.0-10.0).\nThe base score reflects intrinsic characteristics, while temporal and environmental scores allow contextual\nadjustment for asset criticality, exploitability intelligence, and compensating controls.\nThe CVSS scoring framework is governed by a comprehensive set of enterprise-wide policies that define",
+        "The CVSS Scoring and Vulnerability Rating Framework framework establishes the enterprise approach to\nidentifying, assessing, prioritizing, and remediating security vulnerabilities across the entire technology\nestate. Effective vulnerability management reduces the organization's exposure to exploitation by shrinking\nthe attack surface available to adversaries.\nThis program adheres to NIST SP 800-40, CIS Controls v8 Control 7 (Continuous Vulnerability\nManagement), and CVSS v3.1 for vulnerability rating.",
+        "CVSS Scoring and Vulnerability\nRating Framework\nVulnerability Management\nDocument ID: VULN-POL-001\nVersion: v2.1\nClassification: INTERNAL\nOwner: Information Security Architecture\nReview Cycle: Annual\nLast Reviewed: Q1 2026\nThis document contains proprietary and confidential information. Distribution is restricted to authorized personnel\nonly.",
+        "capabilities with the enterprise SIEM enables real-time correlation of security events and automated response actions via SOAR playbooks, significantly reducing mean time to detect\n(MTTD) and mean time to respond (MTTR) compared to manual processes. Data feeds from CVSS scoring\nsystems are normalized to a common schema using vendor-neutral parsers, ensuring compatibility with the\nenterprise logging standard. Alert thresholds and correlation rules are reviewed monthly by detection\nengineers and tuned based on false positive rates and emerging threat intelligence.\nThe CVSS scoring control framework is mapped to multiple regulatory standards including SOX, HIPAA,"
+      ],
+      "total_statements": 9,
+      "supported_statements": 9,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "The CVSS scoring system is a standardized method for rating vulnerability severity.",
+          "supported": true
+        },
+        {
+          "statement": "Scores in the CVSS scoring system range from 0.0 to 10.0.",
+          "supported": true
+        },
+        {
+          "statement": "The scores in the CVSS scoring system are categorized as follows: None (0.0), Low (0.1-3.9), Medium (4.0-6.9), High (7.0-8.9), and Critical (9.0-10.0).",
+          "supported": true
+        },
+        {
+          "statement": "A vulnerability score is calculated based on three components.",
+          "supported": true
+        },
+        {
+          "statement": "The three components of a vulnerability score are: Base score, Temporal score, and Environmental score.",
+          "supported": true
+        },
+        {
+          "statement": "The Base score reflects intrinsic characteristics of the vulnerability.",
+          "supported": true
+        },
+        {
+          "statement": "The Temporal score allows contextual adjustment for asset criticality, exploitability intelligence, and compensating controls.",
+          "supported": true
+        },
+        {
+          "statement": "The Environmental score allows contextual adjustment for asset criticality, exploitability intelligence, and compensating controls.",
+          "supported": true
+        },
+        {
+          "statement": "The CVSS scoring framework is governed by a comprehensive set of enterprise-wide policies.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q007",
+      "query": "What is the difference between CVSS Base Score and CVSS Temporal Score?",
+      "answer": "The CVSS Base Score and CVSS Temporal Score differ in their focus:\n\n* CVSS Base Score reflects intrinsic characteristics of a vulnerability, such as attack vector, attack complexity, and user interaction [source: vuln_asset_prioritization.pdf, p15].\n* CVSS Temporal Score allows for contextual adjustment based on temporal factors, such as exploit code maturity, remediation level, and report confidence [source: vuln_asset_prioritization.pdf, p15].\n\nIn other words, the Base Score is a fixed score based on the vulnerability's inherent properties, while the Temporal Score is an additional adjustment that takes into account the current state of the vulnerability and its potential impact.",
+      "contexts": [
+        "The Common Vulnerability Scoring System (CVSS) v3.1 provides a standardized method for rating\nvulnerability severity. CVSS scores range from 0.0 to 10.0: None (0.0), Low (0.1-3.9), Medium (4.0-6.9),\nHigh (7.0-8.9), and Critical (9.0-10.0).\nThe base score reflects intrinsic characteristics, while temporal and environmental scores allow contextual\nadjustment for asset criticality, exploitability intelligence, and compensating controls.\nThe CVSS scoring framework is governed by a comprehensive set of enterprise-wide policies that define"
+      ],
+      "total_statements": 10,
+      "supported_statements": 4,
+      "faithfulness": 0.4,
+      "statements": [
+        {
+          "statement": "The CVSS Base Score reflects intrinsic characteristics of a vulnerability.",
+          "supported": true
+        },
+        {
+          "statement": "The CVSS Base Score reflects attack vector.",
+          "supported": false
+        },
+        {
+          "statement": "The CVSS Base Score reflects attack complexity.",
+          "supported": false
+        },
+        {
+          "statement": "The CVSS Base Score reflects user interaction.",
+          "supported": false
+        },
+        {
+          "statement": "The CVSS Temporal Score allows for contextual adjustment based on temporal factors.",
+          "supported": true
+        },
+        {
+          "statement": "The CVSS Temporal Score allows for contextual adjustment based on exploit code maturity.",
+          "supported": false
+        },
+        {
+          "statement": "The CVSS Temporal Score allows for contextual adjustment based on remediation level.",
+          "supported": false
+        },
+        {
+          "statement": "The CVSS Temporal Score allows for contextual adjustment based on report confidence.",
+          "supported": false
+        },
+        {
+          "statement": "The CVSS Base Score is a fixed score based on the vulnerability's inherent properties.",
+          "supported": true
+        },
+        {
+          "statement": "The CVSS Temporal Score is an additional adjustment that takes into account the current state of the vulnerability and its potential impact.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q008",
+      "query": "What is behavioral baseline profiling in UEBA and how is it established?",
+      "answer": "Behavioral baseline profiling in UEBA is the process of establishing dynamic behavioral baselines for each user and entity. This is done by applying machine learning, statistical modeling, and advanced analytics to detect anomalies in user behavior, device activity, and entity interactions [source: ueba_baseline_profiling.pdf, p3].\n\nThe process of establishing behavioral baselines involves:\n\n* Applying machine learning, statistical modeling, and advanced analytics to detect anomalies [source: ueba_baseline_profiling.pdf, p3].\n* Establishing dynamic behavioral baselines for each user and entity [source: ueba_baseline_profiling.pdf, p3].\n* Enabling detection of novel threats that evade traditional controls [source: ueba_baseline_profiling.pdf, p3; ueba_alert_triage.pdf, p3].\n\nThis process allows UEBA to detect anomalies in user behavior, device activity, and entity interactions, and to establish a dynamic behavioral baseline for each user and entity.",
+      "contexts": [
+        "The User and Entity Baseline Profiling Framework framework defines the enterprise approach to leveraging\nUser and Entity Behavior Analytics (UEBA) as a core security operations capability. UEBA applies machine\nlearning, statistical modeling, and advanced analytics to detect anomalies in user behavior, device activity,\nand entity interactions.\nUnlike signature-based detection that relies on known threat patterns, UEBA establishes dynamic behavioral\nbaselines for each user and entity, enabling detection of novel threats that evade traditional controls.",
+        "The UEBA Alert Triage and Investigation Procedures framework defines the enterprise approach to\nleveraging User and Entity Behavior Analytics (UEBA) as a core security operations capability. UEBA\napplies machine learning, statistical modeling, and advanced analytics to detect anomalies in user behavior,\ndevice activity, and entity interactions.\nUnlike signature-based detection that relies on known threat patterns, UEBA establishes dynamic behavioral\nbaselines for each user and entity, enabling detection of novel threats that evade traditional controls.",
+        "1 Retrieve full behavioral timeline for the entity from UEBA platform.\n2 Review recent access patterns against peer group baseline.\n3 Check HR system for any pending transfers, PIPs, or termination notices.\n4 Review badge access logs for unusual building entry patterns.\n5 Examine email and communication metadata for external contact anomalies.\n6 Query SIEM for correlated events from other security tools.\n7 Interview manager if risk score exceeds 75 without clear technical explanation.\n8 Document findings and risk determination in case management system."
+      ],
+      "total_statements": 7,
+      "supported_statements": 7,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "Behavioral baseline profiling in UEBA is the process of establishing dynamic behavioral baselines for each user and entity.",
+          "supported": true
+        },
+        {
+          "statement": "This is done by applying machine learning, statistical modeling, and advanced analytics to detect anomalies in user behavior, device activity, and entity interactions.",
+          "supported": true
+        },
+        {
+          "statement": "The process of establishing behavioral baselines involves applying machine learning, statistical modeling, and advanced analytics to detect anomalies.",
+          "supported": true
+        },
+        {
+          "statement": "The process of establishing behavioral baselines involves establishing dynamic behavioral baselines for each user and entity.",
+          "supported": true
+        },
+        {
+          "statement": "The process of establishing behavioral baselines involves enabling detection of novel threats that evade traditional controls.",
+          "supported": true
+        },
+        {
+          "statement": "This process allows UEBA to detect anomalies in user behavior, device activity, and entity interactions.",
+          "supported": true
+        },
+        {
+          "statement": "This process allows UEBA to establish a dynamic behavioral baseline for each user and entity.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q009",
+      "query": "How does UEBA detect anomalous user behavior that indicates a compromised account?",
+      "answer": "UEBA detects anomalous user behavior that indicates a compromised account by establishing dynamic behavioral baselines for each user and entity, enabling detection of novel threats that evade traditional controls [source: ueba_anomaly_detection.pdf, p3] and [source: ueba_baseline_profiling.pdf, p3].\n\nThis is achieved through the application of machine learning, statistical modeling, and advanced analytics to detect anomalies in user behavior, device activity, and entity interactions [source: ueba_anomaly_detection.pdf, p3] and [source: ueba_baseline_profiling.pdf, p3].\n\nIn particular, UEBA applies these techniques to:\n\n* Detect anomalies in user behavior\n* Identify unusual device activity\n* Identify unusual entity interactions\n\nThese techniques enable UEBA to detect novel threats that evade traditional controls, including compromised accounts [source: ueba_anomaly_detection.pdf, p3] and [source: ueba_baseline_profiling.pdf, p3].",
+      "contexts": [
+        "The UEBA Anomaly Detection Methodology framework defines the enterprise approach to leveraging User\nand Entity Behavior Analytics (UEBA) as a core security operations capability. UEBA applies machine\nlearning, statistical modeling, and advanced analytics to detect anomalies in user behavior, device activity,\nand entity interactions.\nUnlike signature-based detection that relies on known threat patterns, UEBA establishes dynamic behavioral\nbaselines for each user and entity, enabling detection of novel threats that evade traditional controls.",
+        "The User and Entity Baseline Profiling Framework framework defines the enterprise approach to leveraging\nUser and Entity Behavior Analytics (UEBA) as a core security operations capability. UEBA applies machine\nlearning, statistical modeling, and advanced analytics to detect anomalies in user behavior, device activity,\nand entity interactions.\nUnlike signature-based detection that relies on known threat patterns, UEBA establishes dynamic behavioral\nbaselines for each user and entity, enabling detection of novel threats that evade traditional controls.",
+        "Privileged Access Management (PAM) is a subset of identity and access management that focuses on\nmonitoring, securing, and controlling elevated accounts that have greater-than-normal access to critical\nsystems and sensitive data. These accounts represent the highest-risk identities within any enterprise\nenvironment.\nThe PAM program manages the full lifecycle of privileged accounts, enforces just-in-time access, records all\nprivileged sessions, and detects anomalous behavior indicative of insider threat or external compromise.",
+        "1 Retrieve full behavioral timeline for the entity from UEBA platform.\n2 Review recent access patterns against peer group baseline.\n3 Check HR system for any pending transfers, PIPs, or termination notices.\n4 Review badge access logs for unusual building entry patterns.\n5 Examine email and communication metadata for external contact anomalies.\n6 Query SIEM for correlated events from other security tools.\n7 Interview manager if risk score exceeds 75 without clear technical explanation.\n8 Document findings and risk determination in case management system."
+      ],
+      "total_statements": 11,
+      "supported_statements": 11,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "UEBA detects anomalous user behavior that indicates a compromised account.",
+          "supported": true
+        },
+        {
+          "statement": "UEBA establishes dynamic behavioral baselines for each user and entity.",
+          "supported": true
+        },
+        {
+          "statement": "UEBA enables detection of novel threats that evade traditional controls.",
+          "supported": true
+        },
+        {
+          "statement": "Machine learning is applied to detect anomalies in user behavior.",
+          "supported": true
+        },
+        {
+          "statement": "Statistical modeling is applied to detect anomalies in user behavior.",
+          "supported": true
+        },
+        {
+          "statement": "Advanced analytics are applied to detect anomalies in user behavior.",
+          "supported": true
+        },
+        {
+          "statement": "UEBA detects anomalies in user behavior.",
+          "supported": true
+        },
+        {
+          "statement": "UEBA identifies unusual device activity.",
+          "supported": true
+        },
+        {
+          "statement": "UEBA identifies unusual entity interactions.",
+          "supported": true
+        },
+        {
+          "statement": "UEBA detects novel threats that evade traditional controls.",
+          "supported": true
+        },
+        {
+          "statement": "UEBA detects compromised accounts.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q010",
+      "query": "What is attack surface management and what does an asset inventory include?",
+      "answer": "Attack Surface Management (ASM) is the enterprise capability to continuously discover, inventory, assess, and manage an organization's digital attack surface. This encompasses all internet-facing assets, cloud resources, third-party connections, and shadow IT that could be exploited by adversaries [source: asm_asset_inventory.pdf, p3].\n\nAn asset inventory, as part of the Attack Surface Asset Inventory Framework, includes all internet-facing assets, cloud resources, third-party connections, and shadow IT [source: asm_asset_inventory.pdf, p3].",
+      "contexts": [
+        "The Attack Surface Asset Inventory Framework program establishes the enterprise capability to\ncontinuously discover, inventory, assess, and manage the organization's digital attack surface. This\nencompasses all internet-facing assets, cloud resources, third-party connections, and shadow IT that could\nbe exploited by adversaries.\nModern enterprises face a rapidly expanding attack surface driven by cloud adoption, remote work, M&A;\nactivity, and shadow IT. ASM provides the continuous visibility required to identify exposures before\nadversaries exploit them.",
+        "The External Attack Surface Management Program program establishes the enterprise capability to\ncontinuously discover, inventory, assess, and manage the organization's digital attack surface. This\nencompasses all internet-facing assets, cloud resources, third-party connections, and shadow IT that could\nbe exploited by adversaries.\nModern enterprises face a rapidly expanding attack surface driven by cloud adoption, remote work, M&A;\nactivity, and shadow IT. ASM provides the continuous visibility required to identify exposures before\nadversaries exploit them.",
+        "Attack Surface Asset Inventory",
+        "Cloud Asset Discovery and Shadow\nIT Detection\nAttack Surface Management\nDocument ID: ASM-POL-004\nVersion: v2.1\nClassification: INTERNAL\nOwner: Information Security Architecture\nReview Cycle: Annual\nLast Reviewed: Q1 2026\nThis document contains proprietary and confidential information. Distribution is restricted to authorized personnel\nonly."
+      ],
+      "total_statements": 3,
+      "supported_statements": 3,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "Attack Surface Management (ASM) is the enterprise capability to continuously discover, inventory, assess, and manage an organization's digital attack surface.",
+          "supported": true
+        },
+        {
+          "statement": "This encompasses all internet-facing assets, cloud resources, third-party connections, and shadow IT that could be exploited by adversaries.",
+          "supported": true
+        },
+        {
+          "statement": "An asset inventory, as part of the Attack Surface Asset Inventory Framework, includes all internet-facing assets, cloud resources, third-party connections, and shadow IT.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q011",
+      "query": "What KPIs measure the maturity of an attack surface management program?",
+      "answer": "I don't have enough information in the provided documents to answer this question.",
+      "contexts": [
+        "Metrics and key performance indicators (KPIs) for multi-stage attack detection are reported monthly to the\nInformation Security Steering Committee and quarterly to the Board Audit and Risk Committee, with\nyear-over-year trend analysis to demonstrate program maturity. Operational metrics include coverage\npercentages, mean time to detect, mean time to respond, and SLA adherence rates, while strategic metrics\ntrack risk reduction, cost per incident, and regulatory compliance posture. Dashboard visualizations are",
+        "ness on an annual basis, with findings reported directly to the\nAudit Committee. The organization's multi-stage attack detection maturity level is assessed annually using a five-level maturity\nmodel aligned to CMMI and the NIST CSF, with the current target state defined as Level 3 (Defined) or\nhigher across all control domains. Maturity gaps identified during the assessment are incorporated into the\nsecurity program roadmap as remediation initiatives with resource allocations and target completion dates.\nExternal benchmarking against industry peers in the same sector is conducted biannually to ensure the",
+        "90 days, after which they must be re-evaluated and either remediated or renewed with updated justification. All active exceptions are reviewed monthly by the Vulnerability Management and\nRisk teams to assess residual risk and accelerate remediation where possible.\nMetrics and key performance indicators (KPIs) for assertion security are reported monthly to the Information\nSecurity Steering Committee and quarterly to the Board Audit and Risk Committee, with year-over-year\ntrend analysis to demonstrate program maturity. Operational metrics include coverage percentages, mean",
+        "The External Attack Surface Management Program program establishes the enterprise capability to\ncontinuously discover, inventory, assess, and manage the organization's digital attack surface. This\nencompasses all internet-facing assets, cloud resources, third-party connections, and shadow IT that could\nbe exploited by adversaries.\nModern enterprises face a rapidly expanding attack surface driven by cloud adoption, remote work, M&A;\nactivity, and shadow IT. ASM provides the continuous visibility required to identify exposures before\nadversaries exploit them."
+      ],
+      "total_statements": 0,
+      "supported_statements": 0,
+      "faithfulness": null,
+      "statements": []
+    },
+    {
+      "query_id": "q012",
+      "query": "How does a SIEM system aggregate and normalize logs from multiple sources?",
+      "answer": "The SIEM system aggregates and normalizes logs from multiple sources as follows:\n\n* Aggregates security telemetry from across the technology estate [source: siem_log_aggregation.pdf, p3].\n* Processes approximately 500,000 events per second (EPS) from over 2,000 log sources spanning endpoint, network, cloud, application, and identity domains [source: siem_log_aggregation.pdf, p3].\n* Normalizes event data [source: siem_log_aggregation.pdf, p3].\n* Applies detection logic to identify threats in real time [source: siem_log_aggregation.pdf, p3].\n* Uses vendor-neutral parsers to normalize data feeds from log collection architecture systems to a common schema, ensuring compatibility with the enterprise logging standard [source: siem_alert_correlation.pdf, p11].",
+      "contexts": [
+        "The SIEM Log Aggregation and Normalization Framework framework defines the enterprise approach to\nSecurity Information and Event Management (SIEM), the foundational platform for security monitoring,\nthreat detection, and incident response. The SIEM aggregates security telemetry from across the technology\nestate, normalizes event data, and applies detection logic to identify threats in real time.\nThe enterprise SIEM processes approximately 500,000 events per second (EPS) from over 2,000 log\nsources spanning endpoint, network, cloud, application, and identity domains.",
+        "SIEM Log Aggregation and\nNormalization Framework\nSIEM\nDocument ID: SIEM-POL-001\nVersion: v2.1\nClassification: INTERNAL\nOwner: Information Security Architecture\nReview Cycle: Annual\nLast Reviewed: Q1 2026\nThis document contains proprietary and confidential information. Distribution is restricted to authorized personnel\nonly.",
+        "Integration of log collection architecture capabilities with the enterprise SIEM enables real-time correlation of\nsecurity events and automated response actions via SOAR playbooks, significantly reducing mean time to\ndetect (MTTD) and mean time to respond (MTTR) compared to manual processes. Data feeds from log\ncollection architecture systems are normalized to a common schema using vendor-neutral parsers, ensuring\ncompatibility with the enterprise logging standard. Alert thresholds and correlation rules are reviewed"
+      ],
+      "total_statements": 8,
+      "supported_statements": 8,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "The SIEM system aggregates security telemetry from across the technology estate.",
+          "supported": true
+        },
+        {
+          "statement": "The SIEM system processes approximately 500,000 events per second.",
+          "supported": true
+        },
+        {
+          "statement": "The SIEM system processes events from over 2,000 log sources.",
+          "supported": true
+        },
+        {
+          "statement": "The SIEM system processes events from endpoint, network, cloud, application, and identity domains.",
+          "supported": true
+        },
+        {
+          "statement": "The SIEM system normalizes event data.",
+          "supported": true
+        },
+        {
+          "statement": "The SIEM system applies detection logic to identify threats in real time.",
+          "supported": true
+        },
+        {
+          "statement": "The SIEM system uses vendor-neutral parsers to normalize data feeds from log collection architecture systems.",
+          "supported": true
+        },
+        {
+          "statement": "The SIEM system uses a common schema to ensure compatibility with the enterprise logging standard.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q013",
+      "query": "What is the difference between a SIEM alert and a SIEM correlation rule?",
+      "answer": "Based on the provided context, I couldn't find a direct explanation of the difference between a SIEM alert and a SIEM correlation rule. However, I can provide some related information.\n\n* SIEM alerts are mentioned as being generated through the application of detection logic to identify threats in real-time [source: siem_alert_correlation.pdf, p3].\n* SIEM correlation rules are reviewed monthly by detection engineers and are integrated with the enterprise SIEM to enable real-time correlation of security events and automated response actions [source: siem_alert_correlation.pdf, p5 and p29].\n\nIt appears that correlation rules are a component of the SIEM system that enables real-time correlation of security events, whereas alerts are the output of this process. However, without a direct explanation of the difference between the two, I can only provide this interpretation.\n\nI don't have enough information in the provided documents to answer this question with certainty.",
+      "contexts": [
+        "The SIEM Alert Correlation and Threat Detection framework defines the enterprise approach to Security\nInformation and Event Management (SIEM), the foundational platform for security monitoring, threat\ndetection, and incident response. The SIEM aggregates security telemetry from across the technology\nestate, normalizes event data, and applies detection logic to identify threats in real time.\nThe enterprise SIEM processes approximately 500,000 events per second (EPS) from over 2,000 log\nsources spanning endpoint, network, cloud, application, and identity domains.",
+        "rprise control matrix, and compensating controls are identified for each primary control to maintain coverage during periods of maintenance or temporary unavailability.\nIntegration of SIEM program capabilities with the enterprise SIEM enables real-time correlation of security\nevents and automated response actions via SOAR playbooks, significantly reducing mean time to detect\n(MTTD) and mean time to respond (MTTR) compared to manual processes. Data feeds from SIEM program\nsystems are normalized to a common schema using vendor-neutral parsers, ensuring compatibility with the\nenterprise logging standard. Alert thresholds and correlation rules are reviewed monthly by detection",
+        "SIEM Alert Correlation and Threat\nDetection\nSIEM\nDocument ID: SIEM-POL-002\nVersion: v2.1\nClassification: INTERNAL\nOwner: Information Security Architecture\nReview Cycle: Annual\nLast Reviewed: Q1 2026\nThis document contains proprietary and confidential information. Distribution is restricted to authorized personnel\nonly.",
+        "Integration of correlation rule design capabilities with the enterprise SIEM enables real-time correlation of\nsecurity events and automated response actions via SOAR playbooks, significantly reducing mean time to\ndetect (MTTD) and mean time to respond (MTTR) compared to manual processes. Data feeds from\ncorrelation rule design systems are normalized to a common schema using vendor-neutral parsers, ensuring\ncompatibility with the enterprise logging standard. Alert thresholds and correlation rules are reviewed"
+      ],
+      "total_statements": 7,
+      "supported_statements": 6,
+      "faithfulness": 0.8571,
+      "statements": [
+        {
+          "statement": "SIEM alerts are generated through the application of detection logic to identify threats in real-time.",
+          "supported": true
+        },
+        {
+          "statement": "SIEM correlation rules are reviewed monthly by detection engineers.",
+          "supported": false
+        },
+        {
+          "statement": "SIEM correlation rules are integrated with the enterprise SIEM.",
+          "supported": true
+        },
+        {
+          "statement": "SIEM correlation rules enable real-time correlation of security events.",
+          "supported": true
+        },
+        {
+          "statement": "SIEM correlation rules enable automated response actions.",
+          "supported": true
+        },
+        {
+          "statement": "Correlation rules are a component of the SIEM system.",
+          "supported": true
+        },
+        {
+          "statement": "Alerts are the output of the SIEM correlation process.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q014",
+      "query": "What is a DLP framework and how does it prevent sensitive data from leaving the organization?",
+      "answer": "The Data Loss Prevention (DLP) Framework is an enterprise approach to protecting sensitive data throughout its lifecycle\u2014from creation and storage through processing, transmission, and disposal [source: dp_dlp_framework.pdf, p3].\n\nThe DLP framework is governed by a comprehensive set of enterprise-wide policies that define roles, responsibilities, and accountability structures across all business units and technology domains [source: dp_data_classification.pdf, p15]. These policies are reviewed annually by the Information Security Steering Committee and updated to reflect changes in the regulatory environment, threat landscape, and organizational risk appetite.\n\nTo prevent sensitive data from leaving the organization, the DLP framework likely employs various controls and measures, such as:\n\n* Data classification and labeling to identify sensitive data\n* Access controls to restrict access to sensitive data\n* Monitoring and detection of sensitive data in transit or at rest\n* Incident response and remediation in case of data breaches\n* Compliance with regulatory requirements and industry standards (e.g., GDPR, CCPA, HIPAA, PCI DSS, ISO/IEC 27001:2022 Annex A.8, and NIST SP 800-53 SC control family)\n\nHowever, the provided documents do not explicitly describe the specific controls and measures used by the DLP framework to prevent sensitive data from leaving the organization.",
+      "contexts": [
+        "The Data Loss Prevention (DLP) Framework framework establishes the enterprise approach to protecting\nsensitive data throughout its lifecycle\u2014from creation and storage through processing, transmission, and\ndisposal. Data protection is a fundamental obligation driven by regulatory requirements, contractual\ncommitments, and the organization's duty of care.\nThis program aligns with GDPR, CCPA, HIPAA, PCI DSS, ISO/IEC 27001:2022 Annex A.8, and NIST SP\n800-53 SC control family.\nThe data protection program framework is governed by a comprehensive set of enterprise-wide policies that",
+        "The DLP architecture framework is governed by a comprehensive set of enterprise-wide policies that define\nroles, responsibilities, and accountability structures across all business units and technology domains.\nThese policies are reviewed annually by the Information Security Steering Committee and updated to reflect\nchanges in the regulatory environment, threat landscape, and organizational risk appetite. Policy exceptions\nare tracked through the GRC platform and require formal CISO approval with documented compensating\ncontrols.",
+        "The Data Retention and Disposal Policy framework establishes the enterprise approach to protecting\nsensitive data throughout its lifecycle\u2014from creation and storage through processing, transmission, and\ndisposal. Data protection is a fundamental obligation driven by regulatory requirements, contractual\ncommitments, and the organization's duty of care.\nThis program aligns with GDPR, CCPA, HIPAA, PCI DSS, ISO/IEC 27001:2022 Annex A.8, and NIST SP\n800-53 SC control family.\nThe data protection program framework is governed by a comprehensive set of enterprise-wide policies that",
+        "The Privacy Governance and Compliance Framework framework establishes the enterprise approach to\nprotecting sensitive data throughout its lifecycle\u2014from creation and storage through processing,\ntransmission, and disposal. Data protection is a fundamental obligation driven by regulatory requirements,\ncontractual commitments, and the organization's duty of care.\nThis program aligns with GDPR, CCPA, HIPAA, PCI DSS, ISO/IEC 27001:2022 Annex A.8, and NIST SP\n800-53 SC control family.\nThe data protection program framework is governed by a comprehensive set of enterprise-wide policies that"
+      ],
+      "total_statements": 14,
+      "supported_statements": 11,
+      "faithfulness": 0.7857,
+      "statements": [
+        {
+          "statement": "The Data Loss Prevention (DLP) Framework is an enterprise approach to protecting sensitive data throughout its lifecycle\u2014from creation and storage through processing, transmission, and disposal.",
+          "supported": true
+        },
+        {
+          "statement": "The DLP framework is governed by a comprehensive set of enterprise-wide policies that define roles, responsibilities, and accountability structures across all business units and technology domains.",
+          "supported": true
+        },
+        {
+          "statement": "These policies are reviewed annually by the Information Security Steering Committee and updated to reflect changes in the regulatory environment, threat landscape, and organizational risk appetite.",
+          "supported": true
+        },
+        {
+          "statement": "Data classification and labeling is used to identify sensitive data.",
+          "supported": true
+        },
+        {
+          "statement": "Access controls are used to restrict access to sensitive data.",
+          "supported": true
+        },
+        {
+          "statement": "Monitoring and detection of sensitive data in transit or at rest is used to prevent sensitive data from leaving the organization.",
+          "supported": true
+        },
+        {
+          "statement": "Incident response and remediation is used in case of data breaches.",
+          "supported": true
+        },
+        {
+          "statement": "Compliance with regulatory requirements is used to prevent sensitive data from leaving the organization.",
+          "supported": false
+        },
+        {
+          "statement": "The GDPR is a regulatory requirement.",
+          "supported": true
+        },
+        {
+          "statement": "The CCPA is a regulatory requirement.",
+          "supported": true
+        },
+        {
+          "statement": "The HIPAA is a regulatory requirement.",
+          "supported": true
+        },
+        {
+          "statement": "The PCI DSS is a regulatory requirement.",
+          "supported": true
+        },
+        {
+          "statement": "The ISO/IEC 27001:2022 Annex A.8 is a regulatory requirement.",
+          "supported": false
+        },
+        {
+          "statement": "The NIST SP 800-53 SC control family is a regulatory requirement.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q015",
+      "query": "What KPIs are used to measure the effectiveness of a DLP program?",
+      "answer": "Based on the provided context documents, the following KPIs are used to measure the effectiveness of a DLP program:\n\n* Coverage percentages [source: dp_dlp_framework.pdf, p16]\n* Mean time to detect (MTTD) and mean time to respond (MTTR) are not explicitly mentioned in the provided documents, but metrics and key performance indicators (KPIs) are reported monthly to the Information Security Steering Committee and quarterly to the Board Audit and Risk Committee, with year-over-year trend analysis to demonstrate program maturity [source: dp_dlp_framework.pdf, p16]\n* Control effectiveness ratings on a five-point scale from Ineffective to Highly Effective [source: dp_data_classification.pdf, p15]\n* Trending data on DLP policy violations by data channel (e.g., Cloud Upload, Web/HTTP, Printing, Endpoint/USB, IM/Collaboration, Email) [source: dp_dlp_framework.pdf, p18]\n\nNote: The specific KPIs listed in Table 3.1 \u2013 DLP Program KPIs in [2] and [4] are not explicitly mentioned in the provided context, but the following KPIs are listed:\n* Cloud Upload\n* Web/HTTP\n* Printing\n* Endpoint/USB\n* IM/Collaboration\n* Email",
+      "contexts": [
+        "90 days, after which they must be re-evaluated and either remediated or renewed with updated justification. All active exceptions are reviewed monthly by the Vulnerability Management and\nRisk teams to assess residual risk and accelerate remediation where possible.\nMetrics and key performance indicators (KPIs) for DLP architecture are reported monthly to the Information\nSecurity Steering Committee and quarterly to the Board Audit and Risk Committee, with year-over-year\ntrend analysis to demonstrate program maturity. Operational metrics include coverage percentages, mean",
+        "Table 3.1 \u2013 DLP Program KPIs",
+        "platform and require formal CISO approval with documented compensating\ncontrols. Compliance with DLP architecture requirements is measured on a quarterly basis through automated control\ntesting, continuous monitoring, evidence collection, and management attestation processes embedded in\nthe enterprise GRC platform. Control effectiveness ratings are assigned on a five-point scale from\nIneffective to Highly Effective, with findings below Effective requiring a remediation plan within 30 days.\nTrending data is presented to the Board Risk Committee each quarter to facilitate informed oversight.",
+        "Table 3.1 \u2013 DLP Program KPIs\nCloud Upload\nWeb/HTTP\nPrinting\nEndpoint/USB\nIM/Collaboration\nEmail\nFigure 3.1 \u2013 DLP Policy Violations by Data Channel (FY 2025)"
+      ],
+      "total_statements": 16,
+      "supported_statements": 13,
+      "faithfulness": 0.8125,
+      "statements": [
+        {
+          "statement": "Coverage percentages are used to measure the effectiveness of a DLP program.",
+          "supported": true
+        },
+        {
+          "statement": "The source of coverage percentages is dp_dlp_framework.pdf, p16.",
+          "supported": false
+        },
+        {
+          "statement": "Mean time to detect (MTTD) is not explicitly mentioned in the provided documents.",
+          "supported": true
+        },
+        {
+          "statement": "Mean time to respond (MTTR) is not explicitly mentioned in the provided documents.",
+          "supported": true
+        },
+        {
+          "statement": "Metrics and key performance indicators (KPIs) are reported monthly to the Information Security Steering Committee.",
+          "supported": true
+        },
+        {
+          "statement": "Metrics and key performance indicators (KPIs) are reported quarterly to the Board Audit and Risk Committee.",
+          "supported": true
+        },
+        {
+          "statement": "Year-over-year trend analysis is used to demonstrate program maturity.",
+          "supported": true
+        },
+        {
+          "statement": "Control effectiveness ratings are on a five-point scale from Ineffective to Highly Effective.",
+          "supported": true
+        },
+        {
+          "statement": "The source of control effectiveness ratings is dp_data_classification.pdf, p15.",
+          "supported": false
+        },
+        {
+          "statement": "Trending data on DLP policy violations by data channel is reported.",
+          "supported": true
+        },
+        {
+          "statement": "The data channels for DLP policy violations are Cloud Upload, Web/HTTP, Printing, Endpoint/USB, IM/Collaboration, and Email.",
+          "supported": true
+        },
+        {
+          "statement": "The source of trending data on DLP policy violations by data channel is dp_dlp_framework.pdf, p18.",
+          "supported": false
+        },
+        {
+          "statement": "Cloud Upload is a KPI listed in Table 3.1 \u2013 DLP Program KPIs.",
+          "supported": true
+        },
+        {
+          "statement": "Web/HTTP is a KPI listed in Table 3.1 \u2013 DLP Program KPIs.",
+          "supported": true
+        },
+        {
+          "statement": "Printing is a KPI listed in Table 3.1 \u2013 DLP Program KPIs.",
+          "supported": true
+        },
+        {
+          "statement": "Endpoint/USB is a KPI listed in Table 3.1 \u2013 DLP Program KPIs.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q016",
+      "query": "How does insider threat detection differ from external threat detection in fraud investigations?",
+      "answer": "Insider threat detection differs from external threat detection in fraud investigations in the following ways:\n\n* Insider threats are often facilitated by the perpetrator's knowledge of internal controls and detection gaps [source: fraud_insider_threat.pdf, p3].\n* Insider threats are typically perpetrated by individuals with authorized access to financial, operational, or data systems, whereas external threats are often launched by unauthorized individuals or entities [I don't have enough information in the provided documents to answer this question].\n* Insider threat detection requires a comprehensive approach that involves detecting, investigating, and preventing fraudulent activities across all business operations and transactional systems [source: fraud_insider_threat.pdf, p3].\n* Insider threat detection is often more challenging due to the perpetrator's familiarity with internal systems and processes [I don't have enough information in the provided documents to answer this question].\n\nNote: The provided context does not contain enough information to fully answer the question.",
+      "contexts": [
+        "The Insider Threat Detection and Response Program program establishes a comprehensive approach to\ndetecting, investigating, and preventing fraudulent activities across all business operations and transactional\nsystems. This framework applies to all employees, contractors, and third parties who interact with financial,\noperational, or data systems.\nThe Association of Certified Fraud Examiners (ACFE) estimates that organizations lose approximately 5% of\nannual revenue to fraud, with insider threats accounting for a disproportionate share of losses due to the",
+        "Insider Threat Detection and\nResponse Program\nInternal Fraud Prevention\nDocument ID: FRAUD-POL-003\nVersion: v2.1\nClassification: INTERNAL\nOwner: Information Security Architecture\nReview Cycle: Annual\nLast Reviewed: Q1 2026\nThis document contains proprietary and confidential information. Distribution is restricted to authorized personnel\nonly.",
+        "Insider Threat Detection",
+        "ith insider threats accounting for a disproportionate share of losses due to the perpetrator's knowledge of internal controls and detection gaps.\nThe Insider fraud program framework is governed by a comprehensive set of enterprise-wide policies that\ndefine roles, responsibilities, and accountability structures across all business units and technology\ndomains. These policies are reviewed annually by the Information Security Steering Committee and updated\nto reflect changes in the regulatory environment, threat landscape, and organizational risk appetite. Policy\nexceptions are tracked through the GRC platform and require formal CISO approval with documented"
+      ],
+      "total_statements": 4,
+      "supported_statements": 4,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "Insider threats are often facilitated by the perpetrator's knowledge of internal controls and detection gaps.",
+          "supported": true
+        },
+        {
+          "statement": "Insider threats are typically perpetrated by individuals with authorized access to financial, operational, or data systems.",
+          "supported": true
+        },
+        {
+          "statement": "Insider threat detection requires a comprehensive approach that involves detecting, investigating, and preventing fraudulent activities across all business operations and transactional systems.",
+          "supported": true
+        },
+        {
+          "statement": "Insider threat detection is often more challenging due to the perpetrator's familiarity with internal systems and processes.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q017",
+      "query": "What is Privileged Access Management and why is it critical for enterprise security?",
+      "answer": "Privileged Access Management (PAM) is a subset of identity and access management that focuses on monitoring, securing, and controlling elevated accounts with greater-than-normal access to critical systems and sensitive data [source: iam_pam_privileged_access.pdf, p3].\n\nPAM is critical for enterprise security because it manages the full lifecycle of privileged accounts, enforces just-in-time access, records all privileged sessions, and detects anomalous behavior indicative of insider threat or external compromise [source: iam_pam_privileged_access.pdf, p3].\n\nThis is essential because privileged accounts represent the highest-risk identities within any enterprise environment, and PAM helps to mitigate these risks by controlling and monitoring access to sensitive systems and data [source: iam_pam_privileged_access.pdf, p3].",
+      "contexts": [
+        "Privileged Access Management (PAM) is a subset of identity and access management that focuses on\nmonitoring, securing, and controlling elevated accounts that have greater-than-normal access to critical\nsystems and sensitive data. These accounts represent the highest-risk identities within any enterprise\nenvironment.\nThe PAM program manages the full lifecycle of privileged accounts, enforces just-in-time access, records all\nprivileged sessions, and detects anomalous behavior indicative of insider threat or external compromise.",
+        "Privileged Access Management\n(PAM) Framework\nEnterprise Identity and Access Management\nDocument ID: IAM-POL-002\nVersion: v2.1\nClassification: INTERNAL\nOwner: Information Security Architecture\nReview Cycle: Annual\nLast Reviewed: Q1 2026\nThis document contains proprietary and confidential information. Distribution is restricted to authorized personnel\nonly.",
+        "Introduction to Privileged Access Management",
+        "This policy establishes the enterprise framework for Role-Based Access Control (RBAC) across all\ninformation systems, applications, and infrastructure components. RBAC restricts system access based on\neach user's role, enforcing the principle of least privilege across all on-premises, cloud, and hybrid\nenvironments.\nThe scope encompasses all employees, contractors, third-party vendors, and automated service accounts.\nIt applies to all systems processing, storing, or transmitting sensitive or regulated data."
+      ],
+      "total_statements": 11,
+      "supported_statements": 11,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "Privileged Access Management (PAM) is a subset of identity and access management.",
+          "supported": true
+        },
+        {
+          "statement": "PAM focuses on monitoring, securing, and controlling elevated accounts.",
+          "supported": true
+        },
+        {
+          "statement": "Elevated accounts have greater-than-normal access to critical systems and sensitive data.",
+          "supported": true
+        },
+        {
+          "statement": "PAM is critical for enterprise security.",
+          "supported": true
+        },
+        {
+          "statement": "PAM manages the full lifecycle of privileged accounts.",
+          "supported": true
+        },
+        {
+          "statement": "PAM enforces just-in-time access.",
+          "supported": true
+        },
+        {
+          "statement": "PAM records all privileged sessions.",
+          "supported": true
+        },
+        {
+          "statement": "PAM detects anomalous behavior.",
+          "supported": true
+        },
+        {
+          "statement": "Anomalous behavior is indicative of insider threat or external compromise.",
+          "supported": true
+        },
+        {
+          "statement": "Privileged accounts represent the highest-risk identities within any enterprise environment.",
+          "supported": true
+        },
+        {
+          "statement": "PAM helps to mitigate risks by controlling and monitoring access to sensitive systems and data.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q018",
+      "query": "How does a PAM solution enforce just-in-time access for privileged accounts?",
+      "answer": "A PAM solution enforces just-in-time (JIT) access for privileged accounts through time-bounded session checkout, with automatic revocation upon session expiry [source: iam_rbac_policy.pdf, p29]. This means that privileged role assignments are restricted to the minimum time window required, and sessions are automatically revoked when they expire.\n\nAdditionally, the enterprise PAM platform records all JIT sessions, including keystrokes, screen capture, and command logs, and stores them for a minimum of 12 months in an immutable audit repository [source: iam_rbac_policy.pdf, p29].",
+      "contexts": [
+        "Privileged Access Management (PAM) is a subset of identity and access management that focuses on\nmonitoring, securing, and controlling elevated accounts that have greater-than-normal access to critical\nsystems and sensitive data. These accounts represent the highest-risk identities within any enterprise\nenvironment.\nThe PAM program manages the full lifecycle of privileged accounts, enforces just-in-time access, records all\nprivileged sessions, and detects anomalous behavior indicative of insider threat or external compromise.",
+        "ntrols restrict privileged role assignments to the minimum time window required. The enterprise PAM platform enforces JIT through time-bounded session checkout, with automatic\nrevocation upon session expiry.\nJIT sessions are fully recorded (keystrokes, screen capture, command logs) and stored for a minimum of 12\nmonths in the immutable audit repository.\nThe JIT access framework is governed by a comprehensive set of enterprise-wide policies that define roles,\nresponsibilities, and accountability structures across all business units and technology domains. These\npolicies are reviewed annually by the Information Security Steering Committee and updated to reflect"
+      ],
+      "total_statements": 10,
+      "supported_statements": 10,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "A PAM solution enforces just-in-time (JIT) access for privileged accounts through time-bounded session checkout.",
+          "supported": true
+        },
+        {
+          "statement": "A PAM solution automatically revokes access upon session expiry.",
+          "supported": true
+        },
+        {
+          "statement": "Privileged role assignments are restricted to the minimum time window required.",
+          "supported": true
+        },
+        {
+          "statement": "Sessions are automatically revoked when they expire.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise PAM platform records all JIT sessions.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise PAM platform records keystrokes.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise PAM platform records screen capture.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise PAM platform records command logs.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise PAM platform stores JIT session logs for a minimum of 12 months.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise PAM platform stores logs in an immutable audit repository.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q019",
+      "query": "What is a vulnerability patch management process and what are its key stages?",
+      "answer": "Based on the provided context, the vulnerability patch management process is a part of the Enterprise Patch Management Policy framework. The key stages of this process are not explicitly mentioned in the provided document. However, it is mentioned that the framework adheres to NIST SP 800-40, which likely outlines the key stages of the vulnerability patch management process.\n\nA possible answer based on the provided context is:\n\nThe vulnerability patch management process is a part of the Enterprise Patch Management Policy framework, which aims to identify, assess, prioritize, and remediate security vulnerabilities across the entire technology estate. The key stages of this process are not explicitly mentioned in the provided document, but it is likely that they include:\n\n* Identifying vulnerabilities (not explicitly mentioned in the provided document)\n* Assessing vulnerabilities (not explicitly mentioned in the provided document)\n* Prioritizing vulnerabilities (not explicitly mentioned in the provided document)\n* Remediation (not explicitly mentioned in the provided document)\n\nThe provided document does not explicitly mention the key stages of the vulnerability patch management process. However, it is likely that these stages are outlined in NIST SP 800-40, which the framework adheres to.\n\n[source: vuln_patch_management.pdf, p3]",
+      "contexts": [
+        "The Enterprise Patch Management Policy framework establishes the enterprise approach to identifying,\nassessing, prioritizing, and remediating security vulnerabilities across the entire technology estate. Effective\nvulnerability management reduces the organization's exposure to exploitation by shrinking the attack\nsurface available to adversaries.\nThis program adheres to NIST SP 800-40, CIS Controls v8 Control 7 (Continuous Vulnerability\nManagement), and CVSS v3.1 for vulnerability rating.\nThe vulnerability management framework is governed by a comprehensive set of enterprise-wide policies"
+      ],
+      "total_statements": 9,
+      "supported_statements": 6,
+      "faithfulness": 0.6667,
+      "statements": [
+        {
+          "statement": "The vulnerability patch management process is a part of the Enterprise Patch Management Policy framework.",
+          "supported": true
+        },
+        {
+          "statement": "The Enterprise Patch Management Policy framework adheres to NIST SP 800-40.",
+          "supported": true
+        },
+        {
+          "statement": "NIST SP 800-40 likely outlines the key stages of the vulnerability patch management process.",
+          "supported": true
+        },
+        {
+          "statement": "The framework aims to identify, assess, prioritize, and remediate security vulnerabilities across the entire technology estate.",
+          "supported": true
+        },
+        {
+          "statement": "The provided document does not explicitly mention the key stages of the vulnerability patch management process.",
+          "supported": false
+        },
+        {
+          "statement": "The key stages of the vulnerability patch management process are not explicitly mentioned in the provided document.",
+          "supported": false
+        },
+        {
+          "statement": "The document mentions that the framework adheres to NIST SP 800-40.",
+          "supported": true
+        },
+        {
+          "statement": "The framework adheres to NIST SP 800-40.",
+          "supported": true
+        },
+        {
+          "statement": "The document is sourced from vuln_patch_management.pdf, page 3.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q020",
+      "query": "What KPIs indicate the health and performance of a vulnerability patch management program?",
+      "answer": "The KPIs that indicate the health and performance of a vulnerability patch management program are:\n\n* Coverage percentages [source: vuln_patch_management.pdf, p25]\n* Mean time to detect [source: vuln_patch_management.pdf, p25]\n* Mean time to respond [source: vuln_patch_management.pdf, p25]\n* SLA adherence rates [source: vuln_patch_management.pdf, p25]\n* Risk reduction [source: asm_exposure_scoring.pdf, p16]\n* Cost per incident [source: asm_exposure_scoring.pdf, p16]\n* Regulatory compliance posture [source: asm_exposure_scoring.pdf, p16]\n\nNote that the specific KPIs mentioned in the context documents are:\n\n* Table 5.1 \u2013 Vulnerability Management KPIs (from vuln_asset_prioritization.pdf and vuln_patch_management.pdf) \n  - However, the exact KPIs listed in the table are not provided in the context documents.",
+      "contexts": [
+        "Risk teams to assess residual risk and accelerate remediation where possible.\nMetrics and key performance indicators (KPIs) for patch deployment are reported monthly to the Information\nSecurity Steering Committee and quarterly to the Board Audit and Risk Committee, with year-over-year\ntrend analysis to demonstrate program maturity. Operational metrics include coverage percentages, mean\ntime to detect, mean time to respond, and SLA adherence rates, while strategic metrics track risk reduction,\ncost per incident, and regulatory compliance posture. Dashboard visualizations are maintained in the",
+        "C\nM\nTable 5.1 \u2013 Vulnerability Management KPIs",
+        "anted for a maximum of 90 days, after which they must be re-evaluated and either remediated or renewed with updated justification. All active exceptions are reviewed monthly by the\nVulnerability Management and Risk teams to assess residual risk and accelerate remediation where\npossible.\nMetrics and key performance indicators (KPIs) for exposure scoring methodology are reported monthly to\nthe Information Security Steering Committee and quarterly to the Board Audit and Risk Committee, with\nyear-over-year trend analysis to demonstrate program maturity. Operational metrics include coverage",
+        "C\nM\nTable 5.1 \u2013 Vulnerability Management KPIs\n80\n60\n40\n20\n0\nWindows\nServer Linux macOS\nNetwork\nDevices Containers\nCloud\nV\nMs\nCompliant %\nFigure 5.1 \u2013 Patch Compliance % by Platform (Q1 2026)\nSLA Target %"
+      ],
+      "total_statements": 16,
+      "supported_statements": 6,
+      "faithfulness": 0.375,
+      "statements": [
+        {
+          "statement": "Coverage percentages are used to indicate the health and performance of a vulnerability patch management program.",
+          "supported": true
+        },
+        {
+          "statement": "The source of coverage percentages is vuln_patch_management.pdf, page 25.",
+          "supported": false
+        },
+        {
+          "statement": "Mean time to detect is used to indicate the health and performance of a vulnerability patch management program.",
+          "supported": true
+        },
+        {
+          "statement": "The source of mean time to detect is vuln_patch_management.pdf, page 25.",
+          "supported": false
+        },
+        {
+          "statement": "Mean time to respond is used to indicate the health and performance of a vulnerability patch management program.",
+          "supported": true
+        },
+        {
+          "statement": "The source of mean time to respond is vuln_patch_management.pdf, page 25.",
+          "supported": false
+        },
+        {
+          "statement": "SLA adherence rates are used to indicate the health and performance of a vulnerability patch management program.",
+          "supported": true
+        },
+        {
+          "statement": "The source of SLA adherence rates is vuln_patch_management.pdf, page 25.",
+          "supported": false
+        },
+        {
+          "statement": "Risk reduction is used to indicate the health and performance of a vulnerability patch management program.",
+          "supported": true
+        },
+        {
+          "statement": "The source of risk reduction is asm_exposure_scoring.pdf, page 16.",
+          "supported": false
+        },
+        {
+          "statement": "Cost per incident is used to indicate the health and performance of a vulnerability patch management program.",
+          "supported": false
+        },
+        {
+          "statement": "The source of cost per incident is asm_exposure_scoring.pdf, page 16.",
+          "supported": false
+        },
+        {
+          "statement": "Regulatory compliance posture is used to indicate the health and performance of a vulnerability patch management program.",
+          "supported": false
+        },
+        {
+          "statement": "The source of regulatory compliance posture is asm_exposure_scoring.pdf, page 16.",
+          "supported": false
+        },
+        {
+          "statement": "Table 5.1 in vuln_asset_prioritization.pdf and vuln_patch_management.pdf lists vulnerability management KPIs.",
+          "supported": true
+        },
+        {
+          "statement": "The exact KPIs listed in Table 5.1 are not provided in the context documents.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q021",
+      "query": "According to the SIEM Alert Severity Matrix, what is the response SLA for a P2-High alert versus a P3-Medium alert, and what analyst action is required for each?",
+      "answer": "Based on the provided context, here are the answers:\n\n* For a P2-High alert, the response SLA is 1 hour and the analyst action is Full investigation [source: siem_alert_correlation.pdf, p21].\n* For a P3-Medium alert, the response SLA is 4 hours and the analyst action is Triage and assess [source: siem_alert_correlation.pdf, p21].",
+      "contexts": [
+        "Table 4.1 \u2013 SIEM Alert Severity Matrix\n200\n150\n100\n50\n0\nJan Feb Mar Apr May Jun\nP1 Critical\nigure 4.1 \u2013 Monthly SIEM Alert Volume by Priority (Jan\u2013Jun 2026)\nP2 High\nP3 Medium",
+        "Priority: P1 - Critical | CVSS / Score: 9.0+ | Response SLA: 15 minutes | Analyst Action: Immediate IR escalation\nPriority: P2 - High | CVSS / Score: 7.0-8.9 | Response SLA: 1 hour | Analyst Action: Full investigation\nPriority: P3 - Medium | CVSS / Score: 4.0-6.9 | Response SLA: 4 hours | Analyst Action: Triage and assess\nPriority: P4 - Low | CVSS / Score: 0.1-3.9 | Response SLA: 24 hours | Analyst Action: Log and review\nPriority: P5 - Informational | CVSS / Score: 0.0 | Response SLA: 72 hours | Analyst Action: Trending analysis"
+      ],
+      "total_statements": 6,
+      "supported_statements": 4,
+      "faithfulness": 0.6667,
+      "statements": [
+        {
+          "statement": "For a P2-High alert, the response SLA is 1 hour.",
+          "supported": true
+        },
+        {
+          "statement": "For a P2-High alert, the analyst action is Full investigation.",
+          "supported": true
+        },
+        {
+          "statement": "The source of this information is siem_alert_correlation.pdf.",
+          "supported": false
+        },
+        {
+          "statement": "The page number of this information in siem_alert_correlation.pdf is 21.",
+          "supported": false
+        },
+        {
+          "statement": "For a P3-Medium alert, the response SLA is 4 hours.",
+          "supported": true
+        },
+        {
+          "statement": "For a P3-Medium alert, the analyst action is Triage and assess.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q022",
+      "query": "For a Critical vulnerability scored 9.0\u201310.0 on CVSS, what are the remediation SLAs for internet-facing systems versus internal systems, and who is the designated escalation contact?",
+      "answer": "For a Critical vulnerability scored 9.0\u201310.0 on CVSS:\n\n* Internet-Facing SLA: 24 hours [source: vuln_asset_prioritization.pdf, p23]\n* Internal SLA: 72 hours [source: vuln_asset_prioritization.pdf, p23]\n* Escalation: CISO immediate [source: vuln_asset_prioritization.pdf, p23]",
+      "contexts": [
+        "The Common Vulnerability Scoring System (CVSS) v3.1 provides a standardized method for rating\nvulnerability severity. CVSS scores range from 0.0 to 10.0: None (0.0), Low (0.1-3.9), Medium (4.0-6.9),\nHigh (7.0-8.9), and Critical (9.0-10.0).\nThe base score reflects intrinsic characteristics, while temporal and environmental scores allow contextual\nadjustment for asset criticality, exploitability intelligence, and compensating controls.\nThe CVSS scoring framework is governed by a comprehensive set of enterprise-wide policies that define",
+        "CVSS Severity: Critical (9.0-10.0) | Internet-Facing SLA: 24 hours | Internal SLA: 72 hours | Escalation: CISO immediate\nCVSS Severity: High (7.0-8.9) | Internet-Facing SLA: 7 days | Internal SLA: 14 days | Escalation: VP Engineering\nCVSS Severity: Medium (4.0-6.9) | Internet-Facing SLA: 30 days | Internal SLA: 60 days | Escalation: Security Manager\nCVSS Severity: Low (0.1-3.9) | Internet-Facing SLA: 90 days | Internal SLA: 180 days | Escalation: Asset Owner"
+      ],
+      "total_statements": 3,
+      "supported_statements": 2,
+      "faithfulness": 0.6667,
+      "statements": [
+        {
+          "statement": "Internet-Facing SLA is 24 hours.",
+          "supported": false
+        },
+        {
+          "statement": "Internal SLA is 72 hours.",
+          "supported": true
+        },
+        {
+          "statement": "The CISO is responsible for immediate escalation.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q023",
+      "query": "According to the VM KPI Dashboard, what is the current Mean Time to Remediate Critical vulnerabilities, what is the target, and what does the Trend column say?",
+      "answer": "According to the VM KPI Dashboard, the current Mean Time to Remediate Critical vulnerabilities is 31 hours, the target is not explicitly stated but mentioned as \"rs\" which is likely a placeholder for a specific target value, and the Trend column says \"Needs Attention\" [source: vuln_asset_prioritization.pdf, p27].",
+      "contexts": [
+        "KPI: itical Vuln Remediation Rate (SL | Target: A) 100% | Current: 97.2% | Trend: Improving\nKPI: igh Vuln Remediation Rate (SLA | Target: ) 95% | Current: 91.4% | Trend: Stable\nKPI: an Time to Remediate Critical (h | Target: rs) <24 | Current: 31 | Trend: Needs Attention\nKPI: Scan Coverage (%) | Target: 98% | Current: 95.3% | Trend: Improving\nKPI: Vuln Recurrence Rate | Target: <5% | Current: 3.1% | Trend: Improving\nKPI: SLA Exception Rate | Target: <2% | Current: 1.8% | Trend: Stable",
+        "KPI: Attack Surface Coverage (%) | Target: 100% | Current: 94.7% | Owner: ASM Team\nKPI: Critical Exposures (SLA met) | Target: 100% | Current: 93.2% | Owner: Asset Owners\nKPI: Mean Time to Discover (hrs) | Target: <24 | Current: 18 | Owner: ASM Team\nKPI: Mean Time to Remediate (days) | Target: <14 | Current: 11.3 | Owner: IT Operations\nKPI: Shadow IT Assets Resolved | Target: 90% | Current: 67% | Owner: IT Governance\nKPI: New Asset Discovery Rate | Target: N/A | Current: 47/week | Owner: Tracking",
+        "90 days, after which they must be re-evaluated and either remediated or renewed with updated justification. All active exceptions are reviewed monthly by the Vulnerability Management and\nRisk teams to assess residual risk and accelerate remediation where possible.\nMetrics and key performance indicators (KPIs) for VM automation workflows are reported monthly to the\nInformation Security Steering Committee and quarterly to the Board Audit and Risk Committee, with\nyear-over-year trend analysis to demonstrate program maturity. Operational metrics include coverage\npercentages, mean time to detect, mean time to respond, and SLA adherence rates, while strategic metrics",
+        "90 days, after which they must be re-evaluated and either remediated or renewed with updated justification. All active exceptions are reviewed monthly by the Vulnerability Management and\nRisk teams to assess residual risk and accelerate remediation where possible.\nMetrics and key performance indicators (KPIs) for VM executive reporting are reported monthly to the\nInformation Security Steering Committee and quarterly to the Board Audit and Risk Committee, with\nyear-over-year trend analysis to demonstrate program maturity. Operational metrics include coverage\npercentages, mean time to detect, mean time to respond, and SLA adherence rates, while strategic metrics"
+      ],
+      "total_statements": 5,
+      "supported_statements": 2,
+      "faithfulness": 0.4,
+      "statements": [
+        {
+          "statement": "The Mean Time to Remediate Critical vulnerabilities is 31 hours.",
+          "supported": false
+        },
+        {
+          "statement": "The target for Mean Time to Remediate Critical vulnerabilities is not explicitly stated.",
+          "supported": true
+        },
+        {
+          "statement": "The Trend column says \"Needs Attention\".",
+          "supported": true
+        },
+        {
+          "statement": "The source of the information is vuln_asset_prioritization.pdf.",
+          "supported": false
+        },
+        {
+          "statement": "The page number of the source is 27.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q024",
+      "query": "At what UEBA risk score range does a user receive an Imminent Threat classification, what two automated actions are triggered, and what is the investigation timeline?",
+      "answer": "At a UEBA risk score range of 90-100, a user receives an Imminent Threat classification. \n\nAutomated actions triggered:\n* Account suspension\n* SOC page\n\nInvestigation timeline: Immediate [source: ueba_alert_triage.pdf, p25].",
+      "contexts": [
+        "Score Range: 0-39 | Risk Level: Low | Action: Monitor only | Review SLA: No action required\nScore Range: 40-59 | Risk Level: Medium | Action: Watchlist | Review SLA: Weekly analyst review\nScore Range: 60-79 | Risk Level: High | Action: Alert generated | Review SLA: 24-hour investigation\nScore Range: 80-89 | Risk Level: Critical | Action: Automatic case opened | Review SLA: 4-hour investigation\nScore Range: 90-100 | Risk Level: Imminent Threat | Action: Account suspension + SOC page | Review SLA: Immediate"
+      ],
+      "total_statements": 16,
+      "supported_statements": 7,
+      "faithfulness": 0.4375,
+      "statements": [
+        {
+          "statement": "At a UEBA risk score range of 90-100, a user receives an Imminent Threat classification.",
+          "supported": true
+        },
+        {
+          "statement": "A UEBA risk score range of 90-100 exists.",
+          "supported": true
+        },
+        {
+          "statement": "A UEBA risk score range of 90-100 is used for classification.",
+          "supported": true
+        },
+        {
+          "statement": "A user receives a classification at a UEBA risk score range of 90-100.",
+          "supported": true
+        },
+        {
+          "statement": "A user receives an Imminent Threat classification.",
+          "supported": true
+        },
+        {
+          "statement": "The Imminent Threat classification exists.",
+          "supported": true
+        },
+        {
+          "statement": "Automated actions are triggered.",
+          "supported": false
+        },
+        {
+          "statement": "Account suspension is an automated action.",
+          "supported": false
+        },
+        {
+          "statement": "SOC page is an automated action.",
+          "supported": false
+        },
+        {
+          "statement": "The SOC page exists.",
+          "supported": false
+        },
+        {
+          "statement": "The investigation timeline is Immediate.",
+          "supported": false
+        },
+        {
+          "statement": "The investigation timeline exists.",
+          "supported": true
+        },
+        {
+          "statement": "The source of the investigation timeline is ueba_alert_triage.pdf.",
+          "supported": false
+        },
+        {
+          "statement": "ueba_alert_triage.pdf is a source.",
+          "supported": false
+        },
+        {
+          "statement": "The page number of the source is 25.",
+          "supported": false
+        },
+        {
+          "statement": "Page 25 of ueba_alert_triage.pdf exists.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q025",
+      "query": "Which Cloud ASM KPI is currently in Needs Attention status, what is its current value, and what is the target threshold?",
+      "answer": "Based on the provided context documents, the Cloud ASM KPI that is currently in Needs Attention status is:\n\n* Unauthorized Cloud Services [source: asm_asset_inventory.pdf, p26]\n* Current value: 34\n* Target threshold: <20 [source: asm_asset_inventory.pdf, p26]",
+      "contexts": [
+        "KPI: ublic Cloud Assets Inventoried (% | Target: ) 100% | Current: 96.4% | Trend: Improving\nKPI: Critical Misconfigurations Open | Target: <10 | Current: 7 | Trend: Improving\nKPI: Unauthorized Cloud Services | Target: <20 | Current: 34 | Trend: Needs Attention\nKPI: vg Exposure Closure Time (days | Target: ) <7 | Current: 9.2 | Trend: Improving\nKPI: Certificate Expiry Alerts | Target: 0 | Current: 2 | Trend: Action Required",
+        "KPI: itical Vuln Remediation Rate (SL | Target: A) 100% | Current: 97.2% | Trend: Improving\nKPI: igh Vuln Remediation Rate (SLA | Target: ) 95% | Current: 91.4% | Trend: Stable\nKPI: an Time to Remediate Critical (h | Target: rs) <24 | Current: 31 | Trend: Needs Attention\nKPI: Scan Coverage (%) | Target: 98% | Current: 95.3% | Trend: Improving\nKPI: Vuln Recurrence Rate | Target: <5% | Current: 3.1% | Trend: Improving\nKPI: SLA Exception Rate | Target: <2% | Current: 1.8% | Trend: Stable"
+      ],
+      "total_statements": 5,
+      "supported_statements": 3,
+      "faithfulness": 0.6,
+      "statements": [
+        {
+          "statement": "The Cloud ASM KPI that is currently in Needs Attention status is Unauthorized Cloud Services.",
+          "supported": true
+        },
+        {
+          "statement": "The source of this information is asm_asset_inventory.pdf, page 26.",
+          "supported": false
+        },
+        {
+          "statement": "The current value of Unauthorized Cloud Services is 34.",
+          "supported": true
+        },
+        {
+          "statement": "The target threshold for Unauthorized Cloud Services is less than 20.",
+          "supported": true
+        },
+        {
+          "statement": "The source of the target threshold information is asm_asset_inventory.pdf, page 26.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q026",
+      "query": "According to the Fraud Program KPI Dashboard, what is the target False Positive Rate, what is the current measured rate, and what is the trend?",
+      "answer": "According to the provided documents, the target and current False Positive Rate for the Fraud Program KPI Dashboard is as follows:\n\n* Target: <60% [source: fraud_anomaly_detection.pdf, p41]\n* Current: 54% [source: fraud_anomaly_detection.pdf, p41]\n* Trend: Improving [source: fraud_anomaly_detection.pdf, p41]\n\nNote that the target False Positive Rate is mentioned in the SIEM Alert Correlation document as well, but it is not relevant to the Fraud Program KPI Dashboard.",
+      "contexts": [
+        "KPI: Fraud Loss Rate (% revenue) | Target: <0.1% | Current: 0.08% | Trend: Improving\nKPI: Mean Time to Detect (days) | Target: <30 | Current: 22 | Trend: Improving\nKPI: Mean Time to Contain (days) | Target: <5 | Current: 3.2 | Trend: Stable\nKPI: Alert-to-Case Conversion Rate | Target: 15-25% | Current: 19% | Trend: Stable\nKPI: Investigation Close Rate (30d) | Target: >80% | Current: 84% | Trend: Improving\nKPI: False Positive Rate | Target: <60% | Current: 54% | Trend: Improving",
+        "KPI: Events Per Second (EPS) | Target: 500K | Current: 487K | Trend: Stable\nKPI: Alert Volume (daily) | Target: <500 | Current: 423 | Trend: Within target\nKPI: False Positive Rate | Target: <50% | Current: 44% | Trend: Improving\nKPI: Mean Time to Detect (min) | Target: <60 | Current: 34 | Trend: Improving\nKPI: Use Case Coverage (MITRE) | Target: >70% | Current: 68% | Trend: Improving\nKPI: Log Source Uptime (%) | Target: 99.9% | Current: 99.7% | Trend: Stable",
+        "KPI: DLP Policy Coverage (%) | Target: 100% | Current: 94.3% | Trend: Improving\nKPI: Critical Data Incidents (monthly) | Target: <5 | Current: 2 | Trend: Stable\nKPI: Blocked Exfiltration Attempts | Target: N/A | Current: 1,847 | Trend: Tracking\nKPI: False Positive Rate (%) | Target: <20% | Current: 18.3% | Trend: Improving\nKPI: Avg Investigation Time (hrs) | Target: <4 | Current: 2.8 | Trend: Improving",
+        "KPI: True Positive Rate | Target: >40% | Current: 47% | Notes: Above target\nKPI: False Positive Rate | Target: <60% | Current: 53% | Notes: Improving\nKPI: Mean Time to Detect (days) | Target: <5 | Current: 3.8 | Notes: On target\nKPI: Alert Volume (daily) | Target: <100 | Current: 76 | Notes: Within range\nKPI: igh-Risk Entity Reviews (monthly | Target: ) N/A | Current: 234 | Notes: Tracking\nKPI: Cases Converted to IR | Target: N/A | Current: 12 | Notes: Monthly avg"
+      ],
+      "total_statements": 5,
+      "supported_statements": 3,
+      "faithfulness": 0.6,
+      "statements": [
+        {
+          "statement": "The target False Positive Rate for the Fraud Program KPI Dashboard is less than 60%.",
+          "supported": true
+        },
+        {
+          "statement": "The current False Positive Rate for the Fraud Program KPI Dashboard is 54%.",
+          "supported": true
+        },
+        {
+          "statement": "The current False Positive Rate for the Fraud Program KPI Dashboard is mentioned in fraud_anomaly_detection.pdf, page 41.",
+          "supported": false
+        },
+        {
+          "statement": "The trend of the False Positive Rate for the Fraud Program KPI Dashboard is improving.",
+          "supported": true
+        },
+        {
+          "statement": "The target False Positive Rate for the Fraud Program KPI Dashboard is mentioned in the SIEM Alert Correlation document.",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q027",
+      "query": "According to the Data Retention Schedule, what is the minimum retention period for Health Records PHI, which regulation mandates it, and what specific disposal method is required?",
+      "answer": "According to the Data Retention Schedule, the minimum retention period for Health Records (PHI) is 6 years minimum, mandated by HIPAA [source: dp_data_classification.pdf, p31]. The specific disposal method required for Health Records (PHI) is DoD 5220.22-M wipe [source: dp_data_classification.pdf, p31].",
+      "contexts": [
+        "riod: 7 years | Legal Basis: SOX/Regulatory | Disposal Method: Encrypted archive Data Category: Marketing Data | Retention Period: 2 years from consent | Legal Basis: GDPR consent | Disposal Method: Secure deletion\nData Category: Health Records (PHI) | Retention Period: 6 years minimum | Legal Basis: HIPAA | Disposal Method: DoD 5220.22-M wipe",
+        "Data Category: Employee Records | Retention Period: 7 years post-termination | Legal Basis: Tax/Employment law | Disposal Method: Secure deletion\nData Category: Financial Records | Retention Period: 7 years | Legal Basis: SOX/Tax regulations | Disposal Method: Secure destruction\nData Category: Customer PII | Retention Period: Duration of relationship + 5yr | Legal Basis: Contract/Legal | Disposal Method: Anonymization\nData Category: Security Logs | Retention Period: 7 years | Legal Basis: SOX/Regulatory | Disposal Method: Encrypted archive"
+      ],
+      "total_statements": 5,
+      "supported_statements": 3,
+      "faithfulness": 0.6,
+      "statements": [
+        {
+          "statement": "The minimum retention period for Health Records (PHI) is 6 years minimum.",
+          "supported": true
+        },
+        {
+          "statement": "The retention period for Health Records (PHI) is mandated by HIPAA.",
+          "supported": true
+        },
+        {
+          "statement": "The specific disposal method required for Health Records (PHI) is DoD 5220.22-M wipe.",
+          "supported": true
+        },
+        {
+          "statement": "The disposal method for Health Records (PHI) is specified in dp_data_classification.pdf, p31.",
+          "supported": false
+        },
+        {
+          "statement": "HIPAA mandates the retention period for Health Records (PHI).",
+          "supported": false
+        }
+      ]
+    },
+    {
+      "query_id": "q028",
+      "query": "Under the enterprise Policy Exception Request process, what is the maximum duration for which an exception can initially be granted, who are the three required approvers, and how frequently are active exceptions reviewed?",
+      "answer": "Based on the provided context documents, here are the answers to the question:\n\n* The maximum duration for which an exception can initially be granted is 90 days [source: ueba_anomaly_detection.pdf, p22; source: dp_data_classification.pdf, p41; source: vuln_asset_prioritization.pdf, p21; source: dp_data_classification.pdf, p38].\n* The three required approvers for the Policy Exception Request (PER) form are:\n  1. The relevant system owner\n  2. The Security Manager\n  3. The CISO [source: ueba_anomaly_detection.pdf, p22; source: dp_data_classification.pdf, p41; source: vuln_asset_prioritization.pdf, p21; source: dp_data_classification.pdf, p38].\n* Active exceptions are reviewed monthly by the Vulnerability Management and Risk teams to assess residual risk and accelerate remediation where possible [source: ueba_anomaly_detection.pdf, p22; source: dp_data_classification.pdf, p41; source: vuln_asset_prioritization.pdf, p21; source: dp_data_classification.pdf, p38].",
+      "contexts": [
+        "Exceptions to rule augmentation policy requirements must be formally documented using the Policy\nException Request (PER) form, approved by the relevant system owner, Security Manager, and CISO, and\nare subject to mandatory compensating controls for the duration of the exception period. Exceptions are\ngranted for a maximum of 90 days, after which they must be re-evaluated and either remediated or renewed\nwith updated justification. All active exceptions are reviewed monthly by the Vulnerability Management and",
+        "Exceptions to breach investigation process policy requirements must be formally documented using the\nPolicy Exception Request (PER) form, approved by the relevant system owner, Security Manager, and\nCISO, and are subject to mandatory compensating controls for the duration of the exception period.\nExceptions are granted for a maximum of 90 days, after which they must be re-evaluated and either\nremediated or renewed with updated justification. All active exceptions are reviewed monthly by the\nVulnerability Management and Risk teams to assess residual risk and accelerate remediation where",
+        "at intelligence policy requirements must be formally documented using the Policy Exception Request (PER) form, approved by the relevant system owner, Security Manager, and CISO, and\nare subject to mandatory compensating controls for the duration of the exception period. Exceptions are\ngranted for a maximum of 90 days, after which they must be re-evaluated and either remediated or renewed\nwith updated justification. All active exceptions are reviewed monthly by the Vulnerability Management and\nRisk teams to assess residual risk and accelerate remediation where possible.",
+        "otification procedures policy requirements must be formally documented using the Policy Exception Request (PER) form, approved by the relevant system owner, Security Manager, and\nCISO, and are subject to mandatory compensating controls for the duration of the exception period.\nExceptions are granted for a maximum of 90 days, after which they must be re-evaluated and either\nremediated or renewed with updated justification. All active exceptions are reviewed monthly by the\nVulnerability Management and Risk teams to assess residual risk and accelerate remediation where\npossible."
+      ],
+      "total_statements": 6,
+      "supported_statements": 4,
+      "faithfulness": 0.6667,
+      "statements": [
+        {
+          "statement": "The maximum duration for which an exception can initially be granted is 90 days.",
+          "supported": true
+        },
+        {
+          "statement": "The three required approvers for the Policy Exception Request (PER) form are:",
+          "supported": true
+        },
+        {
+          "statement": "The relevant system owner",
+          "supported": true
+        },
+        {
+          "statement": "The Security Manager",
+          "supported": false
+        },
+        {
+          "statement": "The CISO.",
+          "supported": false
+        },
+        {
+          "statement": "Active exceptions are reviewed monthly by the Vulnerability Management and Risk teams to assess residual risk and accelerate remediation where possible.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q029",
+      "query": "According to the SIEM Program Overview, approximately how many events per second does the enterprise SIEM process, and from how many log sources does this telemetry originate?",
+      "answer": "According to the provided documents, the enterprise SIEM processes approximately 500,000 events per second (EPS) from over 2,000 log sources spanning endpoint, network, cloud, application, and identity domains.\n\n* Number of events per second: 500,000 EPS [source: siem_log_aggregation.pdf, p3] and [source: siem_use_case_library.pdf, p3]\n* Number of log sources: over 2,000 [source: siem_log_aggregation.pdf, p3] and [source: siem_use_case_library.pdf, p3]",
+      "contexts": [
+        "The SIEM Log Aggregation and Normalization Framework framework defines the enterprise approach to\nSecurity Information and Event Management (SIEM), the foundational platform for security monitoring,\nthreat detection, and incident response. The SIEM aggregates security telemetry from across the technology\nestate, normalizes event data, and applies detection logic to identify threats in real time.\nThe enterprise SIEM processes approximately 500,000 events per second (EPS) from over 2,000 log\nsources spanning endpoint, network, cloud, application, and identity domains.",
+        "The SIEM Use Case Library and Detection Engineering framework defines the enterprise approach to\nSecurity Information and Event Management (SIEM), the foundational platform for security monitoring,\nthreat detection, and incident response. The SIEM aggregates security telemetry from across the technology\nestate, normalizes event data, and applies detection logic to identify threats in real time.\nThe enterprise SIEM processes approximately 500,000 events per second (EPS) from over 2,000 log\nsources spanning endpoint, network, cloud, application, and identity domains."
+      ],
+      "total_statements": 9,
+      "supported_statements": 9,
+      "faithfulness": 1.0,
+      "statements": [
+        {
+          "statement": "The enterprise SIEM processes approximately 500,000 events per second.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise SIEM processes events from over 2,000 log sources.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise SIEM processes events from endpoint domains.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise SIEM processes events from network domains.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise SIEM processes events from cloud domains.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise SIEM processes events from application domains.",
+          "supported": true
+        },
+        {
+          "statement": "The enterprise SIEM processes events from identity domains.",
+          "supported": true
+        },
+        {
+          "statement": "The number of events per second is 500,000.",
+          "supported": true
+        },
+        {
+          "statement": "The number of log sources is over 2,000.",
+          "supported": true
+        }
+      ]
+    },
+    {
+      "query_id": "q030",
+      "query": "A user's UEBA risk score is 75. What risk level classification does this place them in, what action is automatically triggered, and what is the required investigation SLA?",
+      "answer": "",
+      "contexts": [],
+      "total_statements": 0,
+      "supported_statements": 0,
+      "faithfulness": null,
+      "statements": []
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "query_id": "q001",
+    "query": "What is RBAC and how is it implemented in an enterprise environment?",
+    "expected_answer_keywords": ["role", "permission", "access control", "least privilege", "assignment"],
+    "relevant_doc_ids": ["iam_rbac_policy.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q002",
+    "query": "What is the difference between RBAC and ABAC in identity and access management?",
+    "expected_answer_keywords": ["role-based", "attribute-based", "policy", "flexibility", "scalability"],
+    "relevant_doc_ids": ["iam_rbac_policy.pdf"],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q003",
+    "query": "What KPIs are used to measure the effectiveness of an RBAC implementation?",
+    "expected_answer_keywords": ["orphaned accounts", "role explosion", "access review", "violation", "compliance"],
+    "relevant_doc_ids": ["iam_rbac_policy.pdf"],
+    "query_type": "metric"
+  },
+  {
+    "query_id": "q004",
+    "query": "How does a transaction monitoring system detect fraudulent payment activity?",
+    "expected_answer_keywords": ["threshold", "anomaly", "rule", "velocity", "alert", "pattern"],
+    "relevant_doc_ids": ["fraud_transaction_monitoring.pdf"],
+    "query_type": "process"
+  },
+  {
+    "query_id": "q005",
+    "query": "What are the key metrics used to evaluate a fraud detection model in transaction monitoring?",
+    "expected_answer_keywords": ["false positive", "precision", "recall", "AUC", "detection rate"],
+    "relevant_doc_ids": ["fraud_transaction_monitoring.pdf"],
+    "query_type": "metric"
+  },
+  {
+    "query_id": "q006",
+    "query": "What is the CVSS scoring system and how is a vulnerability score calculated?",
+    "expected_answer_keywords": ["base score", "vector", "exploitability", "impact", "severity", "CVSS"],
+    "relevant_doc_ids": ["vuln_cvss_scoring.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q007",
+    "query": "What is the difference between CVSS Base Score and CVSS Temporal Score?",
+    "expected_answer_keywords": ["base", "temporal", "exploit", "remediation", "environmental", "maturity"],
+    "relevant_doc_ids": ["vuln_cvss_scoring.pdf"],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q008",
+    "query": "What is behavioral baseline profiling in UEBA and how is it established?",
+    "expected_answer_keywords": ["baseline", "normal", "behavior", "deviation", "machine learning", "user profile"],
+    "relevant_doc_ids": ["ueba_baseline_profiling.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q009",
+    "query": "How does UEBA detect anomalous user behavior that indicates a compromised account?",
+    "expected_answer_keywords": ["anomaly", "deviation", "risk score", "peer group", "alert", "lateral movement"],
+    "relevant_doc_ids": ["ueba_baseline_profiling.pdf"],
+    "query_type": "process"
+  },
+  {
+    "query_id": "q010",
+    "query": "What is attack surface management and what does an asset inventory include?",
+    "expected_answer_keywords": ["asset", "inventory", "exposure", "external", "attack surface", "discovery"],
+    "relevant_doc_ids": ["asm_asset_inventory.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q011",
+    "query": "What KPIs measure the maturity of an attack surface management program?",
+    "expected_answer_keywords": ["asset coverage", "mean time", "unknown assets", "risk reduction", "remediation"],
+    "relevant_doc_ids": ["asm_asset_inventory.pdf"],
+    "query_type": "metric"
+  },
+  {
+    "query_id": "q012",
+    "query": "How does a SIEM system aggregate and normalize logs from multiple sources?",
+    "expected_answer_keywords": ["log", "aggregation", "normalization", "parser", "collector", "correlation"],
+    "relevant_doc_ids": ["siem_log_aggregation.pdf"],
+    "query_type": "process"
+  },
+  {
+    "query_id": "q013",
+    "query": "What is the difference between a SIEM alert and a SIEM correlation rule?",
+    "expected_answer_keywords": ["alert", "correlation", "rule", "threshold", "event", "trigger", "detection"],
+    "relevant_doc_ids": ["siem_alert_correlation.pdf"],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q014",
+    "query": "What is a DLP framework and how does it prevent sensitive data from leaving the organization?",
+    "expected_answer_keywords": ["data loss prevention", "policy", "classify", "block", "endpoint", "network", "inspection"],
+    "relevant_doc_ids": ["dp_dlp_framework.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q015",
+    "query": "What KPIs are used to measure the effectiveness of a DLP program?",
+    "expected_answer_keywords": ["incident", "false positive", "data exfiltration", "policy violation", "coverage"],
+    "relevant_doc_ids": ["dp_dlp_framework.pdf"],
+    "query_type": "metric"
+  },
+  {
+    "query_id": "q016",
+    "query": "How does insider threat detection differ from external threat detection in fraud investigations?",
+    "expected_answer_keywords": ["insider", "trusted", "access", "privilege abuse", "behavioral", "intent", "external"],
+    "relevant_doc_ids": ["fraud_insider_threat.pdf"],
+    "query_type": "comparison"
+  },
+  {
+    "query_id": "q017",
+    "query": "What is Privileged Access Management and why is it critical for enterprise security?",
+    "expected_answer_keywords": ["privileged", "admin", "credential", "vault", "session recording", "just-in-time"],
+    "relevant_doc_ids": ["iam_pam_privileged_access.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q018",
+    "query": "How does a PAM solution enforce just-in-time access for privileged accounts?",
+    "expected_answer_keywords": ["just-in-time", "temporary", "approval", "workflow", "expiry", "least privilege"],
+    "relevant_doc_ids": ["iam_pam_privileged_access.pdf"],
+    "query_type": "process"
+  },
+  {
+    "query_id": "q019",
+    "query": "What is a vulnerability patch management process and what are its key stages?",
+    "expected_answer_keywords": ["scan", "prioritize", "patch", "test", "deploy", "verify", "lifecycle"],
+    "relevant_doc_ids": ["vuln_patch_management.pdf"],
+    "query_type": "process"
+  },
+  {
+    "query_id": "q020",
+    "query": "What KPIs indicate the health and performance of a vulnerability patch management program?",
+    "expected_answer_keywords": ["mean time to patch", "patch compliance", "SLA", "critical vulnerabilities", "coverage"],
+    "relevant_doc_ids": ["vuln_patch_management.pdf"],
+    "query_type": "metric"
+  },
+  {
+    "query_id": "q021",
+    "query": "According to the SIEM Alert Severity Matrix, what is the response SLA for a P2-High alert versus a P3-Medium alert, and what analyst action is required for each?",
+    "expected_answer_keywords": ["1-hour", "4-hour", "full investigation", "triage", "P2", "P3"],
+    "relevant_doc_ids": ["siem_alert_correlation.pdf"],
+    "query_type": "table"
+  },
+  {
+    "query_id": "q022",
+    "query": "For a Critical vulnerability scored 9.0–10.0 on CVSS, what are the remediation SLAs for internet-facing systems versus internal systems, and who is the designated escalation contact?",
+    "expected_answer_keywords": ["24 hours", "72 hours", "CISO", "internet-facing", "internal"],
+    "relevant_doc_ids": ["vuln_remediation_sla.pdf"],
+    "query_type": "table"
+  },
+  {
+    "query_id": "q023",
+    "query": "According to the VM KPI Dashboard, what is the current Mean Time to Remediate Critical vulnerabilities, what is the target, and what does the Trend column say?",
+    "expected_answer_keywords": ["31 hours", "24 hours", "needs attention"],
+    "relevant_doc_ids": ["vuln_remediation_sla.pdf"],
+    "query_type": "table"
+  },
+  {
+    "query_id": "q024",
+    "query": "At what UEBA risk score range does a user receive an Imminent Threat classification, what two automated actions are triggered, and what is the investigation timeline?",
+    "expected_answer_keywords": ["90", "100", "account suspension", "SOC page", "immediate"],
+    "relevant_doc_ids": ["ueba_risk_scoring.pdf"],
+    "query_type": "table"
+  },
+  {
+    "query_id": "q025",
+    "query": "Which Cloud ASM KPI is currently in Needs Attention status, what is its current value, and what is the target threshold?",
+    "expected_answer_keywords": ["unauthorized cloud services", "34", "20"],
+    "relevant_doc_ids": ["asm_exposure_scoring.pdf"],
+    "query_type": "table"
+  },
+  {
+    "query_id": "q026",
+    "query": "According to the Fraud Program KPI Dashboard, what is the target False Positive Rate, what is the current measured rate, and what is the trend?",
+    "expected_answer_keywords": ["60%", "54%", "improving"],
+    "relevant_doc_ids": ["fraud_insider_threat.pdf"],
+    "query_type": "table"
+  },
+  {
+    "query_id": "q027",
+    "query": "According to the Data Retention Schedule, what is the minimum retention period for Health Records PHI, which regulation mandates it, and what specific disposal method is required?",
+    "expected_answer_keywords": ["6 years", "HIPAA", "DoD 5220.22-M"],
+    "relevant_doc_ids": ["dp_data_classification.pdf"],
+    "query_type": "table"
+  },
+  {
+    "query_id": "q028",
+    "query": "Under the enterprise Policy Exception Request process, what is the maximum duration for which an exception can initially be granted, who are the three required approvers, and how frequently are active exceptions reviewed?",
+    "expected_answer_keywords": ["90 days", "system owner", "security manager", "CISO", "monthly"],
+    "relevant_doc_ids": ["vuln_patch_management.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q029",
+    "query": "According to the SIEM Program Overview, approximately how many events per second does the enterprise SIEM process, and from how many log sources does this telemetry originate?",
+    "expected_answer_keywords": ["500,000", "2,000"],
+    "relevant_doc_ids": ["siem_tuning_framework.pdf"],
+    "query_type": "factual"
+  },
+  {
+    "query_id": "q030",
+    "query": "A user's UEBA risk score is 75. What risk level classification does this place them in, what action is automatically triggered, and what is the required investigation SLA?",
+    "expected_answer_keywords": ["high", "60", "79", "alert generated", "24-hour"],
+    "relevant_doc_ids": ["ueba_risk_scoring.pdf", "ueba_alert_triage.pdf"],
+    "query_type": "table"
+  }
+]

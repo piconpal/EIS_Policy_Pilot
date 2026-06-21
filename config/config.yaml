@@ -1,0 +1,61 @@
+
+
+# ============================================================
+# Enterprise RAG — Configuration
+# All tunables live here. No hardcoded values in source code.
+# ============================================================
+
+# --- Ingestion ---
+chunk_size: 600         # Characters per chunk
+chunk_overlap: 80       # Overlap between consecutive chunks
+
+# --- Retrieval ---
+top_k: 10               # Number of chunks to retrieve from ChromaDB
+reranker_top_n: 4       # Top chunks to keep after reranking
+search_mode: hybrid     # vector | bm25 | hybrid
+rrf_k: 60               # RRF constant (higher = smoother rank fusion)
+mmr_lambda: 0.7         # MMR diversity weight: 1.0=pure relevance, 0.0=pure diversity
+table_score_boost: 2.5  # Score multiplier for has_table chunks on table-anchored queries
+cosine_dedup_threshold: 0.92  # Drop candidate if cosine similarity > this to any kept chunk
+
+# --- Generation ---
+groq_model: llama-3.1-8b-instant
+max_context_tokens: 2200            # Max tokens fed to LLM as context
+reranker_confidence_threshold: 1.5  # Skip LLM if top reranker score below this
+reranker_min_chunk_score: 0.0       # Per-chunk floor — drop truly irrelevant chunks (score < 0)
+groq_max_retries: 3                 # Retry attempts on transient Groq API errors
+
+# --- Embedding ---
+embedding_model: all-MiniLM-L6-v2
+embedding_batch_size: 64   # Chunks per embedding batch (memory vs speed trade-off)
+
+# --- Groq Rate Limits ---
+groq_tpm_limit: 6000   # Tokens per minute limit for your Groq tier (free=6000, dev=higher)
+
+# --- Query Cache ---
+cache_ttl_seconds: 3600   # Cached retrieval results expire after this many seconds (1 hour)
+cache_maxsize: 200         # Max entries kept in cache; LRU eviction beyond this
+
+# --- Session ---
+session_history_turns: 5      # Max conversation turns stored per session
+token_budget: 1500            # Total token budget for session context
+session_ttl_seconds: 1800     # Idle sessions evicted after this many seconds (30 min)
+session_gc_interval_seconds: 300  # How often the GC thread runs (5 min)
+
+# --- Rate Limiting ---
+rate_limit_max: 100        # Max requests per window per user_id
+rate_limit_window_seconds: 60  # Sliding window size in seconds
+
+# --- Paths ---
+vectorstore_path: ./vectorstore
+log_db_path: ./logs/retrieval_log.db
+raw_data_path: ./data/raw
+processed_data_path: ./data/processed
+golden_dataset_path: ./data/golden_dataset.json
+ingestion_log_path: ./logs/ingestion
+eval_report_path: ./logs/eval_report.json
+ragas_report_path: ./logs/ragas_report.json
+
+# --- Async Faithfulness ---
+enable_async_faithfulness: true   # Compute faithfulness in background for every live answer
+                                   # Each answer costs ~5 extra Groq calls; disable on free tier if needed
