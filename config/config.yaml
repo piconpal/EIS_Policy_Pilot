@@ -55,6 +55,9 @@ golden_dataset_path: ./data/golden_dataset.json
 ingestion_log_path: ./logs/ingestion
 eval_report_path: ./logs/eval_report.json
 ragas_report_path: ./logs/ragas_report.json
+kpi_report_path: logs/kpi_report.json
+cluster_report_path: logs/cluster_report.json
+weekly_sample_path: logs/weekly_sample.json
 
 # --- Async Faithfulness ---
 enable_async_faithfulness: true   # Compute faithfulness in background for every live answer

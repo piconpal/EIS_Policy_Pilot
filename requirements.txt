@@ -29,6 +29,9 @@ sqlalchemy==2.0.30
 # Environment
 python-dotenv==1.0.1
 
+# Clustering (used by src/evaluation/query_clusters.py)
+scikit-learn>=1.4.0
+
 # Utilities
 numpy<2                # torch 2.2.2 requires numpy 1.x
 tqdm==4.66.4
